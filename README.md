@@ -17,8 +17,8 @@ Get live soccer/football streams, highlights and live stats for EURO 2016 direct
 
 PS: to navigate through the different menus within the app, it is not case sensitive:
 "What team do you want to see the stats for? 'ALL' 'GROUP' 'TEAM'       
-  a. you can search by group, team or see a list of all of the teams
-You can type: 'all' or 'ALL', 'group' or 'GROUP' -> either will work for every menu
+  1. you can search by group, team or see a list of all of the teams
+  2. You can type: 'all' or 'ALL', 'group' or 'GROUP' -> either will work for every menu
 
 This is my first time writing a program as such, if you have any tips on how I can improve it or have any questions, shoot me a message!
   
