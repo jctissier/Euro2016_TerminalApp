@@ -107,42 +107,42 @@ def Fixtures():
     cprint("".join(map(str, gameE)),'cyan')
 
 def FixturesGroup():
-    gameA1 = tree.xpath('(//html / body / div[2] / div[5] / div[2]//text())[position()>4 and not(position()=6)]')
-    gameA2 = tree.xpath('(//html / body / div[2] / div[5] / div[3]//text())[position()>4 and not(position()=6)]')
-    gameB1 = tree.xpath('(//html / body / div[2] / div[5] / div[4]//text())[position()>4 and not(position()=6)]')
-    gameB2 = tree.xpath('(//html / body / div[2] / div[5] / div[5]//text())[position()>4 and not(position()=6)]')
-    gameD1 = tree.xpath('(//html / body / div[2] / div[5] / div[6]//text())[position()>4 and not(position()=6)]')
-    gameC1 = tree.xpath('(//html / body / div[2] / div[5] / div[7]//text())[position()>4 and not(position()=6)]')
-    gameC2 = tree.xpath('(//html / body / div[2] / div[5] / div[8]//text())[position()>4 and not(position()=6)]')
-    gameD2 = tree.xpath('(//html / body / div[2] / div[5] / div[9]//text())[position()>4 and not(position()=6)]')
-    gameE1 = tree.xpath('(//html / body / div[2] / div[5] / div[10]//text())[position()>4 and not(position()=6)]')
-    gameE2 = tree.xpath('(//html / body / div[2] / div[5] / div[11]//text())[position()>4 and not(position()=6)]')
-    gameF1 = tree.xpath('(//html / body / div[2] / div[5] / div[12]//text())[position()>4 and not(position()=6)]')
-    gameF2 = tree.xpath('(//html / body / div[2] / div[5] / div[13]//text())[position()>4 and not(position()=6)]')
-    gameB3 = tree.xpath('(//html / body / div[2] / div[5] / div[14]//text())[position()>4 and not(position()=6)]')
-    gameA3 = tree.xpath('(//html / body / div[2] / div[5] / div[15]//text())[position()>4 and not(position()=6)]')
-    gameA4 = tree.xpath('(//html / body / div[2] / div[5] / div[16]//text())[position()>4 and not(position()=6)]')
-    gameB4 = tree.xpath('(//html / body / div[2] / div[5] / div[17]//text())[position()>4 and not(position()=6)]')
-    gameC3 = tree.xpath('(//html / body / div[2] / div[5] / div[18]//text())[position()>4 and not(position()=6)]')
-    gameC4 = tree.xpath('(//html / body / div[2] / div[5] / div[19]//text())[position()>4 and not(position()=6)]')
-    gameE3 = tree.xpath('(//html / body / div[2] / div[5] / div[20]//text())[position()>4 and not(position()=6)]')
-    gameD3 = tree.xpath('(//html / body / div[2] / div[5] / div[21]//text())[position()>4 and not(position()=6)]')
-    gameD4 = tree.xpath('(//html / body / div[2] / div[5] / div[22]//text())[position()>4 and not(position()=6)]')
-    gameE4 = tree.xpath('(//html / body / div[2] / div[5] / div[23]//text())[position()>4 and not(position()=6)]')
-    gameF3 = tree.xpath('(//html / body / div[2] / div[5] / div[24]//text())[position()>4 and not(position()=6)]')
-    gameF4 = tree.xpath('(//html / body / div[2] / div[5] / div[25]//text())[position()>4 and not(position()=6)]')
-    gameA5 = tree.xpath('(//html / body / div[2] / div[5] / div[26]//text())[position()>4 and not(position()=6)]')
-    gameA6 = tree.xpath('(//html / body / div[2] / div[5] / div[27]//text())[position()>4 and not(position()=6)]')
-    gameB5 = tree.xpath('(//html / body / div[2] / div[5] / div[28]//text())[position()>4 and not(position()=6)]')
-    gameB6 = tree.xpath('(//html / body / div[2] / div[5] / div[29]//text())[position()>4 and not(position()=6)]')
-    gameC5 = tree.xpath('(//html / body / div[2] / div[5] / div[30]//text())[position()>4 and not(position()=6)]')
-    gameC6 = tree.xpath('(//html / body / div[2] / div[5] / div[31]//text())[position()>4 and not(position()=6)]')
-    gameD5 = tree.xpath('(//html / body / div[2] / div[5] / div[32]//text())[position()>4 and not(position()=6)]')
-    gameD6 = tree.xpath('(//html / body / div[2] / div[5] / div[33]//text())[position()>4 and not(position()=6)]')
-    gameF5 = tree.xpath('(//html / body / div[2] / div[5] / div[34]//text())[position()>4 and not(position()=6)]')
-    gameF6 = tree.xpath('(//html / body / div[2] / div[5] / div[35]//text())[position()>4 and not(position()=6)]')
-    gameE5 = tree.xpath('(//html / body / div[2] / div[5] / div[36]//text())[position()>4 and not(position()=6)]')
-    gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)]')
+    gameA1 = tree.xpath('(//html / body / div[2] / div[5] / div[2]//text())[position()>4 and not(position()=6) and not (position()=12)]')
+    gameA2 = tree.xpath('(//html / body / div[2] / div[5] / div[3]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB1 = tree.xpath('(//html / body / div[2] / div[5] / div[4]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB2 = tree.xpath('(//html / body / div[2] / div[5] / div[5]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD1 = tree.xpath('(//html / body / div[2] / div[5] / div[6]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC1 = tree.xpath('(//html / body / div[2] / div[5] / div[7]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC2 = tree.xpath('(//html / body / div[2] / div[5] / div[8]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD2 = tree.xpath('(//html / body / div[2] / div[5] / div[9]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE1 = tree.xpath('(//html / body / div[2] / div[5] / div[10]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE2 = tree.xpath('(//html / body / div[2] / div[5] / div[11]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF1 = tree.xpath('(//html / body / div[2] / div[5] / div[12]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF2 = tree.xpath('(//html / body / div[2] / div[5] / div[13]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB3 = tree.xpath('(//html / body / div[2] / div[5] / div[14]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA3 = tree.xpath('(//html / body / div[2] / div[5] / div[15]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA4 = tree.xpath('(//html / body / div[2] / div[5] / div[16]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB4 = tree.xpath('(//html / body / div[2] / div[5] / div[17]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC3 = tree.xpath('(//html / body / div[2] / div[5] / div[18]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC4 = tree.xpath('(//html / body / div[2] / div[5] / div[19]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE3 = tree.xpath('(//html / body / div[2] / div[5] / div[20]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD3 = tree.xpath('(//html / body / div[2] / div[5] / div[21]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD4 = tree.xpath('(//html / body / div[2] / div[5] / div[22]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE4 = tree.xpath('(//html / body / div[2] / div[5] / div[23]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF3 = tree.xpath('(//html / body / div[2] / div[5] / div[24]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF4 = tree.xpath('(//html / body / div[2] / div[5] / div[25]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA5 = tree.xpath('(//html / body / div[2] / div[5] / div[26]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA6 = tree.xpath('(//html / body / div[2] / div[5] / div[27]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB5 = tree.xpath('(//html / body / div[2] / div[5] / div[28]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB6 = tree.xpath('(//html / body / div[2] / div[5] / div[29]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC5 = tree.xpath('(//html / body / div[2] / div[5] / div[30]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC6 = tree.xpath('(//html / body / div[2] / div[5] / div[31]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD5 = tree.xpath('(//html / body / div[2] / div[5] / div[32]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD6 = tree.xpath('(//html / body / div[2] / div[5] / div[33]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF5 = tree.xpath('(//html / body / div[2] / div[5] / div[34]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF6 = tree.xpath('(//html / body / div[2] / div[5] / div[35]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE5 = tree.xpath('(//html / body / div[2] / div[5] / div[36]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)and not (position()=12)]')
 
     choose = colored ("Fixtures by GROUP or TEAM 'TEAM' [Stats Menu 'SM', Main Menu 'MM', Logout 'L']\n'A' 'B' 'C' 'D' 'E' 'F' or All Groups 'ALL'\n", 'red', attrs=['bold'])
     chooseGroup = input(choose)
@@ -167,7 +167,7 @@ def FixturesGroup():
         print("Back to Main Menu:")
 
     if chooseGroup == "A" or chooseGroup == "a":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameA1)))
         print("".join(map(str, gameA2)))
         print("".join(map(str, gameA3)))
@@ -178,7 +178,7 @@ def FixturesGroup():
         pickScheduleGroup()
 
     if chooseGroup == "B" or chooseGroup == "b":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameB1)))
         print("".join(map(str, gameB2)))
         print("".join(map(str, gameB3)))
@@ -189,7 +189,7 @@ def FixturesGroup():
         pickScheduleGroup()
 
     if chooseGroup == "C" or chooseGroup == "c":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameC1)))
         print("".join(map(str, gameC2)))
         print("".join(map(str, gameC3)))
@@ -200,7 +200,7 @@ def FixturesGroup():
         pickScheduleGroup()
 
     if chooseGroup == "D" or chooseGroup == "d":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameD1)))
         print("".join(map(str, gameD2)))
         print("".join(map(str, gameD3)))
@@ -211,7 +211,7 @@ def FixturesGroup():
         pickScheduleGroup()
 
     if chooseGroup == "E" or chooseGroup == "e":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameE1)))
         print("".join(map(str, gameE2)))
         print("".join(map(str, gameE3)))
@@ -222,7 +222,7 @@ def FixturesGroup():
         pickScheduleGroup()
 
     if chooseGroup == "F" or chooseGroup == "f":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameF1)))
         print("".join(map(str, gameF2)))
         print("".join(map(str, gameF3)))
@@ -233,7 +233,7 @@ def FixturesGroup():
         pickScheduleGroup()
 
     if chooseGroup == "ALL" or chooseGroup == "all":
-        cprint(" G   DATE       TIME       GAME             SCORE       ", 'red', attrs=['underline'])
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameA1)))
         print("".join(map(str, gameA2)))
         print("".join(map(str, gameA3)))
@@ -282,42 +282,42 @@ def pickScheduleGroup():
     FixturesGroup()
 
 def FixturesTeam():
-    gameA1 = tree.xpath('(//html / body / div[2] / div[5] / div[2]//text())[position()>4 and not(position()=6)]')
-    gameA2 = tree.xpath('(//html / body / div[2] / div[5] / div[3]//text())[position()>4 and not(position()=6)]')
-    gameB1 = tree.xpath('(//html / body / div[2] / div[5] / div[4]//text())[position()>4 and not(position()=6)]')
-    gameB2 = tree.xpath('(//html / body / div[2] / div[5] / div[5]//text())[position()>4 and not(position()=6)]')
-    gameD1 = tree.xpath('(//html / body / div[2] / div[5] / div[6]//text())[position()>4 and not(position()=6)]')
-    gameC1 = tree.xpath('(//html / body / div[2] / div[5] / div[7]//text())[position()>4 and not(position()=6)]')
-    gameC2 = tree.xpath('(//html / body / div[2] / div[5] / div[8]//text())[position()>4 and not(position()=6)]')
-    gameD2 = tree.xpath('(//html / body / div[2] / div[5] / div[9]//text())[position()>4 and not(position()=6)]')
-    gameE1 = tree.xpath('(//html / body / div[2] / div[5] / div[10]//text())[position()>4 and not(position()=6)]')
-    gameE2 = tree.xpath('(//html / body / div[2] / div[5] / div[11]//text())[position()>4 and not(position()=6)]')
-    gameF1 = tree.xpath('(//html / body / div[2] / div[5] / div[12]//text())[position()>4 and not(position()=6)]')
-    gameF2 = tree.xpath('(//html / body / div[2] / div[5] / div[13]//text())[position()>4 and not(position()=6)]')
-    gameB3 = tree.xpath('(//html / body / div[2] / div[5] / div[14]//text())[position()>4 and not(position()=6)]')
-    gameA3 = tree.xpath('(//html / body / div[2] / div[5] / div[15]//text())[position()>4 and not(position()=6)]')
-    gameA4 = tree.xpath('(//html / body / div[2] / div[5] / div[16]//text())[position()>4 and not(position()=6)]')
-    gameB4 = tree.xpath('(//html / body / div[2] / div[5] / div[17]//text())[position()>4 and not(position()=6)]')
-    gameC3 = tree.xpath('(//html / body / div[2] / div[5] / div[18]//text())[position()>4 and not(position()=6)]')
-    gameC4 = tree.xpath('(//html / body / div[2] / div[5] / div[19]//text())[position()>4 and not(position()=6)]')
-    gameE3 = tree.xpath('(//html / body / div[2] / div[5] / div[20]//text())[position()>4 and not(position()=6)]')
-    gameD3 = tree.xpath('(//html / body / div[2] / div[5] / div[21]//text())[position()>4 and not(position()=6)]')
-    gameD4 = tree.xpath('(//html / body / div[2] / div[5] / div[22]//text())[position()>4 and not(position()=6)]')
-    gameE4 = tree.xpath('(//html / body / div[2] / div[5] / div[23]//text())[position()>4 and not(position()=6)]')
-    gameF3 = tree.xpath('(//html / body / div[2] / div[5] / div[24]//text())[position()>4 and not(position()=6)]')
-    gameF4 = tree.xpath('(//html / body / div[2] / div[5] / div[25]//text())[position()>4 and not(position()=6)]')
-    gameA5 = tree.xpath('(//html / body / div[2] / div[5] / div[26]//text())[position()>4 and not(position()=6)]')
-    gameA6 = tree.xpath('(//html / body / div[2] / div[5] / div[27]//text())[position()>4 and not(position()=6)]')
-    gameB5 = tree.xpath('(//html / body / div[2] / div[5] / div[28]//text())[position()>4 and not(position()=6)]')
-    gameB6 = tree.xpath('(//html / body / div[2] / div[5] / div[29]//text())[position()>4 and not(position()=6)]')
-    gameC5 = tree.xpath('(//html / body / div[2] / div[5] / div[30]//text())[position()>4 and not(position()=6)]')
-    gameC6 = tree.xpath('(//html / body / div[2] / div[5] / div[31]//text())[position()>4 and not(position()=6)]')
-    gameD5 = tree.xpath('(//html / body / div[2] / div[5] / div[32]//text())[position()>4 and not(position()=6)]')
-    gameD6 = tree.xpath('(//html / body / div[2] / div[5] / div[33]//text())[position()>4 and not(position()=6)]')
-    gameF5 = tree.xpath('(//html / body / div[2] / div[5] / div[34]//text())[position()>4 and not(position()=6)]')
-    gameF6 = tree.xpath('(//html / body / div[2] / div[5] / div[35]//text())[position()>4 and not(position()=6)]')
-    gameE5 = tree.xpath('(//html / body / div[2] / div[5] / div[36]//text())[position()>4 and not(position()=6)]')
-    gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)]')
+    gameA1 = tree.xpath('(//html / body / div[2] / div[5] / div[2]//text())[position()>4 and not(position()=6) and not (position()=12)]')
+    gameA2 = tree.xpath('(//html / body / div[2] / div[5] / div[3]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB1 = tree.xpath('(//html / body / div[2] / div[5] / div[4]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB2 = tree.xpath('(//html / body / div[2] / div[5] / div[5]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD1 = tree.xpath('(//html / body / div[2] / div[5] / div[6]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC1 = tree.xpath('(//html / body / div[2] / div[5] / div[7]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC2 = tree.xpath('(//html / body / div[2] / div[5] / div[8]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD2 = tree.xpath('(//html / body / div[2] / div[5] / div[9]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE1 = tree.xpath('(//html / body / div[2] / div[5] / div[10]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE2 = tree.xpath('(//html / body / div[2] / div[5] / div[11]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF1 = tree.xpath('(//html / body / div[2] / div[5] / div[12]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF2 = tree.xpath('(//html / body / div[2] / div[5] / div[13]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB3 = tree.xpath('(//html / body / div[2] / div[5] / div[14]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA3 = tree.xpath('(//html / body / div[2] / div[5] / div[15]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA4 = tree.xpath('(//html / body / div[2] / div[5] / div[16]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB4 = tree.xpath('(//html / body / div[2] / div[5] / div[17]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC3 = tree.xpath('(//html / body / div[2] / div[5] / div[18]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC4 = tree.xpath('(//html / body / div[2] / div[5] / div[19]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE3 = tree.xpath('(//html / body / div[2] / div[5] / div[20]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD3 = tree.xpath('(//html / body / div[2] / div[5] / div[21]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD4 = tree.xpath('(//html / body / div[2] / div[5] / div[22]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE4 = tree.xpath('(//html / body / div[2] / div[5] / div[23]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF3 = tree.xpath('(//html / body / div[2] / div[5] / div[24]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF4 = tree.xpath('(//html / body / div[2] / div[5] / div[25]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA5 = tree.xpath('(//html / body / div[2] / div[5] / div[26]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameA6 = tree.xpath('(//html / body / div[2] / div[5] / div[27]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB5 = tree.xpath('(//html / body / div[2] / div[5] / div[28]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameB6 = tree.xpath('(//html / body / div[2] / div[5] / div[29]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC5 = tree.xpath('(//html / body / div[2] / div[5] / div[30]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameC6 = tree.xpath('(//html / body / div[2] / div[5] / div[31]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD5 = tree.xpath('(//html / body / div[2] / div[5] / div[32]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameD6 = tree.xpath('(//html / body / div[2] / div[5] / div[33]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF5 = tree.xpath('(//html / body / div[2] / div[5] / div[34]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameF6 = tree.xpath('(//html / body / div[2] / div[5] / div[35]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE5 = tree.xpath('(//html / body / div[2] / div[5] / div[36]//text())[position()>4 and not(position()=6)and not (position()=12)]')
+    gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)and not (position()=12)]')
 
     fixtures = colored("What team fixtures do you need? List of teams 'list', Stats Menu 'SM', Main Menu 'MM', Logout 'L' \n",'red',attrs=['bold'])
     fixtures_team = input(fixtures) ## add these
@@ -341,7 +341,7 @@ def FixturesTeam():
                   fixtures_team != "hungary" and fixtures_team != "Iceland" and fixtures_team != "iceland"
         and fixtures_team != "portugal" and fixtures_team != "Portugal" and fixtures_team != "list"
           and fixtures_team != "List" and fixtures_team != "MM" and fixtures_team != "mm" and fixtures_team != "sm"
-          and fixtures_team != "SM"):
+          and fixtures_team != "SM" and fixtures_team != "l" and fixtures_team != "L"):
 
         fixtures_team = input(fixtures)
 
@@ -359,6 +359,7 @@ def FixturesTeam():
         Logout()
 
     if (fixtures_team == "france" or fixtures_team == "France"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameA1)))
         print("".join(map(str, gameA4)))
         print("".join(map(str, gameA6)))
@@ -366,6 +367,7 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "albania" or fixtures_team == "Albania"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
         print("".join(map(str, gameA2)))
         print("".join(map(str, gameA4)))
         print("".join(map(str, gameA5)))
@@ -373,6 +375,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "romania" or fixtures_team == "Romania"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameA1)))
         print("".join(map(str, gameA3)))
         print("".join(map(str, gameA5)))
@@ -380,6 +384,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "switzerland" or fixtures_team == "Switzerland"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameA2)))
         print("".join(map(str, gameA3)))
         print("".join(map(str, gameA6)))
@@ -387,6 +393,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "England" or fixtures_team == "england"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameB2)))
         print("".join(map(str, gameB4)))
         print("".join(map(str, gameB6)))
@@ -394,6 +402,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Russia" or fixtures_team == "russia"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameB2)))
         print("".join(map(str, gameB3)))
         print("".join(map(str, gameB5)))
@@ -401,6 +411,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Slovakia" or fixtures_team == "slovakia"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameB1)))
         print("".join(map(str, gameB3)))
         print("".join(map(str, gameB6)))
@@ -408,6 +420,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Wales" or fixtures_team == "wales"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameB1)))
         print("".join(map(str, gameB4)))
         print("".join(map(str, gameB5)))
@@ -415,6 +429,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Germany" or fixtures_team == "germany"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameC2)))
         print("".join(map(str, gameC4)))
         print("".join(map(str, gameC5)))
@@ -422,6 +438,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Northern Ireland" or fixtures_team == "northern ireland"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameC1)))
         print("".join(map(str, gameC3)))
         print("".join(map(str, gameC4)))
@@ -429,6 +447,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Poland" or fixtures_team == "poland"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameC1)))
         print("".join(map(str, gameC4)))
         print("".join(map(str, gameC6)))
@@ -436,6 +456,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "ukraine" or fixtures_team == "Ukraine"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameC2)))
         print("".join(map(str, gameC3)))
         print("".join(map(str, gameC6)))
@@ -443,6 +465,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Croatia" or fixtures_team == "croatia"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameD1)))
         print("".join(map(str, gameD3)))
         print("".join(map(str, gameD5)))
@@ -451,6 +475,8 @@ def FixturesTeam():
 
     if (fixtures_team == "Czech Republic" or fixtures_team == "czech republic" or fixtures_team == "czech" or
     fixtures_team == "Czech"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameD2)))
         print("".join(map(str, gameD3)))
         print("".join(map(str, gameD6)))
@@ -458,6 +484,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Spain" or fixtures_team == "spain"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameD2)))
         print("".join(map(str, gameD4)))
         print("".join(map(str, gameD5)))
@@ -465,6 +493,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Turkey" or fixtures_team == "turkey"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameD1)))
         print("".join(map(str, gameD4)))
         print("".join(map(str, gameD6)))
@@ -472,6 +502,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Belgium" or fixtures_team == "belgium"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameE2)))
         print("".join(map(str, gameE4)))
         print("".join(map(str, gameE6)))
@@ -479,6 +511,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Italy" or fixtures_team == "italy"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameE2)))
         print("".join(map(str, gameE3)))
         print("".join(map(str, gameE5)))
@@ -486,6 +520,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Ireland" or fixtures_team == "ireland"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameE1)))
         print("".join(map(str, gameE4)))
         print("".join(map(str, gameE5)))
@@ -493,6 +529,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Sweden" or fixtures_team == "sweden"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameE1)))
         print("".join(map(str, gameE3)))
         print("".join(map(str, gameE6)))
@@ -500,6 +538,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Austria" or fixtures_team == "austria"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameF1)))
         print("".join(map(str, gameF4)))
         print("".join(map(str, gameF6)))
@@ -507,6 +547,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Hungary" or fixtures_team == "hungary"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameF1)))
         print("".join(map(str, gameF3)))
         print("".join(map(str, gameF5)))
@@ -514,6 +556,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Iceland" or fixtures_team == "iceland"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameF2)))
         print("".join(map(str, gameF3)))
         print("".join(map(str, gameF6)))
@@ -521,6 +565,8 @@ def FixturesTeam():
         FixturesTeam()
 
     if (fixtures_team == "Portugal" or fixtures_team == "portugal"):
+        cprint(" G   DATE        GAME                   SCORE       ", 'red', attrs=['underline'])
+
         print("".join(map(str, gameF2)))
         print("".join(map(str, gameF4)))
         print("".join(map(str, gameF5)))
