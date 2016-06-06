@@ -144,7 +144,7 @@ def FixturesGroup():
     gameE5 = tree.xpath('(//html / body / div[2] / div[5] / div[36]//text())[position()>4 and not(position()=6)]')
     gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)]')
 
-    choose = colored ("Fixtures by GROUP [Stats Menu 'SM', Main Menu 'MM', Logout 'L']\n'A' 'B' 'C' 'D' 'E' 'F' or All Groups 'ALL'\n", 'red', attrs=['bold'])
+    choose = colored ("Fixtures by GROUP or TEAM 'TEAM' [Stats Menu 'SM', Main Menu 'MM', Logout 'L']\n'A' 'B' 'C' 'D' 'E' 'F' or All Groups 'ALL'\n", 'red', attrs=['bold'])
     chooseGroup = input(choose)
     while (chooseGroup != "A" and chooseGroup != "B" and chooseGroup != "C" and chooseGroup != "D" and chooseGroup != "E"
         and chooseGroup != "F" and chooseGroup != "a" and chooseGroup != "b" and chooseGroup != "c" and chooseGroup != "d"
