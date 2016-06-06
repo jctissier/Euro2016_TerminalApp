@@ -7,6 +7,8 @@ Get live soccer/football streams, highlights and live stats for EURO 2016 direct
   2. Find any EURO2016 highlights within 3 seconds
   3. Browse through live stats about the EURO 2016, fixtures, standings, etc...
 
+![alt text](/Program%20Directory.png)
+
 #Modules to Install:
 Open Mac terminal and just write the 'import statement' below
   1. praw               'sudo easy_install praw' ->then type your password       
