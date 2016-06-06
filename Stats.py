@@ -13,11 +13,11 @@ groupRankings = html.fromstring(groups.content)
 
 def Choose_Menu():
     menu = colored("Standings 'S', Fixtures 'F', Main Menu 'MM', Logout 'L'\n",'red',attrs=['bold'])
-    choose_menu = input(menu)
+    choose_menu = raw_input(menu)
     while (choose_menu != "S" and choose_menu != "s" and choose_menu != "f" and choose_menu!= "F" and
            choose_menu != "TS" and choose_menu != "ts" and choose_menu != "TA" and choose_menu != "ta"
            and choose_menu != "mm" and choose_menu != "MM" and choose_menu != "l" and choose_menu != "L"):
-        choose_menu = input(menu)
+        choose_menu = raw_input(menu)
 
     if (choose_menu == "S" or choose_menu == "s"):
         pickStandings()
@@ -145,14 +145,14 @@ def FixturesGroup():
     gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)and not (position()=12)]')
 
     choose = colored ("Fixtures by GROUP or TEAM 'TEAM' [Stats Menu 'SM', Main Menu 'MM', Logout 'L']\n'A' 'B' 'C' 'D' 'E' 'F' or All Groups 'ALL'\n", 'red', attrs=['bold'])
-    chooseGroup = input(choose)
+    chooseGroup = raw_input(choose)
     while (chooseGroup != "A" and chooseGroup != "B" and chooseGroup != "C" and chooseGroup != "D" and chooseGroup != "E"
         and chooseGroup != "F" and chooseGroup != "a" and chooseGroup != "b" and chooseGroup != "c" and chooseGroup != "d"
            and chooseGroup != "e" and chooseGroup != "f" and chooseGroup != "ALL" and chooseGroup != "all" and
                chooseGroup != "l" and chooseGroup != "L" and chooseGroup != "team" and chooseGroup != "Team" and
                    chooseGroup != "TEAM" and chooseGroup != "sm" and chooseGroup != "SM" and chooseGroup != "MM" and
            chooseGroup != "mm"):
-        chooseGroup = input(choose)
+        chooseGroup = raw_input(choose)
 
     if chooseGroup == "l" or chooseGroup == "L":
         Logout()
@@ -320,7 +320,7 @@ def FixturesTeam():
     gameE6 = tree.xpath('(//html / body / div[2] / div[5] / div[37]//text())[position()>4 and not(position()=6)and not (position()=12)]')
 
     fixtures = colored("What team fixtures do you need? List of teams 'list', Stats Menu 'SM', Main Menu 'MM', Logout 'L' \n",'red',attrs=['bold'])
-    fixtures_team = input(fixtures) ## add these
+    fixtures_team = raw_input(fixtures) ## add these
 
     while(fixtures_team != "france" and fixtures_team != "France" and fixtures_team != "Albania" and
                   fixtures_team != "albania" and fixtures_team != "Switzerland" and fixtures_team != "switzerland"
@@ -343,7 +343,7 @@ def FixturesTeam():
           and fixtures_team != "List" and fixtures_team != "MM" and fixtures_team != "mm" and fixtures_team != "sm"
           and fixtures_team != "SM" and fixtures_team != "l" and fixtures_team != "L"):
 
-        fixtures_team = input(fixtures)
+        fixtures_team = raw_input(fixtures)
 
     if (fixtures_team == "sm" or fixtures_team == "SM"):
         Choose_Menu()
@@ -576,12 +576,12 @@ def FixturesTeam():
 
 def pickStandings():
     pick = colored("Pick standings by: 'ALL' 'GROUP' 'TEAM' , or Stats Menu 'SM', Logout 'L'\n", 'red',attrs=['bold'])
-    pickStandings = input(pick)
+    pickStandings = raw_input(pick)
     while (pickStandings != "All" and pickStandings != "all" and pickStandings != "Group" and pickStandings != "group"
            and pickStandings != "GROUP" and pickStandings != "TEAM" and pickStandings != "team" and pickStandings != "Team"
            and pickStandings != "SM" and pickStandings != "l" and pickStandings != "L"and pickStandings != "All"
            and pickStandings != "sm"):
-        pickStandings = input(pick)
+        pickStandings = raw_input(pick)
 
     if (pickStandings == "ALL" or pickStandings == "all" or pickStandings == "All"):
         GroupAllStandings()
@@ -607,11 +607,11 @@ def restartStandings():
 
 def GroupStandings():
     pick = colored("Which Group? [Stats Menu 'SM', Logout 'L']\n 'A' 'B' 'C' 'D' 'E' 'F'\n",'red', attrs=['bold'])
-    pickGroup = input(pick)
+    pickGroup = raw_input(pick)
     while (pickGroup != "A" and pickGroup != "a" and pickGroup != "B" and pickGroup != "b" and pickGroup != "C" and
                    pickGroup != "c" and pickGroup != "D" and pickGroup != "d" and pickGroup != "E" and pickGroup != "e" and
                    pickGroup != "F" and pickGroup != "f" and pickGroup != "sm" and pickGroup != "SM" and pickGroup != "L" and pickGroup != "l"):
-        pickGroup = input(pick)
+        pickGroup = raw_input(pick)
 
     if pickGroup == "l" or pickGroup == "L":
         Logout()
@@ -728,7 +728,7 @@ def GroupAllStandings():
 
 def TeamStandings():
     search = colored("What team are you looking for? Type 'list' for a list of all the countries, Stats Menu 'SM', Logout 'L'\n",'red', attrs=['bold'])
-    Search_TeamName = input(search)
+    Search_TeamName = raw_input(search)
 
     while(Search_TeamName != "france" and Search_TeamName != "France" and Search_TeamName != "Albania" and
         Search_TeamName != "albania" and Search_TeamName != "Switzerland" and Search_TeamName != "switzerland"
@@ -750,7 +750,7 @@ def TeamStandings():
         and Search_TeamName != "portugal" and Search_TeamName != "Portugal" and Search_TeamName != "list"
           and Search_TeamName != "List" and Search_TeamName != "sm" and Search_TeamName != "SM" and Search_TeamName != "L" and Search_TeamName != "l"):
 
-        Search_TeamName = input("Please be more specific\nex: 'France' 'Germany' 'Czech' 'Northern Ireland' etc..[Stats Menu 'SM', Logout 'L']\n")
+        Search_TeamName = raw_input("Please be more specific\nex: 'France' 'Germany' 'Czech' 'Northern Ireland' etc..[Stats Menu 'SM', Logout 'L']\n")
 
     if (Search_TeamName == "l" or Search_TeamName == "L"):
         Logout()
