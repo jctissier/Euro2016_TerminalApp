@@ -3,7 +3,7 @@ If you love Soccer/Football and you want to always be up-to-date with the EURO 2
 
 All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in line#15 of Streams.py with your own Reddit username and password. 
 
-#FUNCTIONALITIES
+#Functionalities
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
   1. Find any live soccer/football streams within 3 seconds
   2. Find any EURO2016 highlights within 3 seconds
