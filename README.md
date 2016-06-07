@@ -51,7 +51,8 @@ Navigating through the different menus within the app, it is not case sensitive:
 
 "What team do you want to see the stats for? 'ALL' 'GROUP' 'TEAM'       
   1. you can search by group, team or see a list of all of the teams
-  2. You can type: 'all' or 'ALL', 'group' or 'GROUP' -> either will work for every menu
+  2. You can type: 'all' or 'ALL', 'group' or 'GROUP' 
+![alt text] (/Documentation/User_input.gif)
 
 This is my first time writing a python application, if you have any tips on how I can improve it or have any questions, shoot me a message!
   
