@@ -11,9 +11,9 @@ Get live soccer/football streams, highlights and live stats for EURO 2016 direct
 
 #Modules to Install:
 Open Mac terminal and just write the 'import statement' below
-  1. praw               'sudo easy_install praw' ->then type your password       
-  2. termcolor          'sudo pip install termcolor' -> then type password
-  3. lxml               'sudo pip install lxml'   -> then type password
+  1. praw               'easy_install praw'     
+  2. termcolor          'pip install termcolor' 
+  3. lxml               'pip install lxml'   
   
 #For people who havn't run python scripts through terminal before:
   1. Download the folder and move it to your desktop
