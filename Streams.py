@@ -27,6 +27,7 @@ def footballHighlights():
 
     print_input1 = colored("Which game highlights do you want?\n")
     highlight = raw_input(print_input1)
+    cprint ("~~~~~~HOLD COMMAND + DOUBLE CLICK = Open link in browser ~~~~~~,'red')
 
     for submission in subreddit.get_hot(limit=80):
         if re.search(highlight, submission.title, re.IGNORECASE):
