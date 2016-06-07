@@ -41,7 +41,8 @@ $pip install lxml
   3. Open terminal and type: 
 
     1. $cd  user/Desktop/Euro2016_TerminalApp
-    2. $python3 Main_Menu.py         OR        python Main_Menu.py     *depends what python version you are running*
+    2. $python3 Main_Menu.py         OR        python Main_Menu.py     
+    3. *depends what python version you are running*
       
   4. Once you see a menu with different options, everything is working!
 
