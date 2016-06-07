@@ -12,7 +12,9 @@ r = praw.Reddit(user_agent=user_agent)
 
 
 def login():
-    r.login('reddit_bot23', 'botbotbot', disable_warning=True)
+    r.login('REDDIT_USERNAME', 'REDDIT_PASSWORD', disable_warning=True)
+    #Enter REDDIT USERNAME AND REDDIT PASSWORD
+    # NEEDED TO SEARCH FOR ALL THE LINKS
 
     print_login = colored("Logging in...\n", 'yellow')
     print(print_login)
