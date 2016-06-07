@@ -53,6 +53,8 @@ Navigating through the different menus within the app, it is not case sensitive:
   1. you can search by group, team or see a list of all of the teams
   2. You can type: 'all' or 'ALL', 'group' or 'GROUP' 
 ![alt text] (/Documentation/User_input.gif)
+![alt text] (/Documentation/User_input2.gif)
+
 
 This is my first time writing a python application, if you have any tips on how I can improve it or have any questions, shoot me a message!
   
