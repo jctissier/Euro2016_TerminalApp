@@ -30,5 +30,5 @@ PS: to navigate through the different menus within the app, it is not case sensi
   1. you can search by group, team or see a list of all of the teams
   2. You can type: 'all' or 'ALL', 'group' or 'GROUP' -> either will work for every menu
 
-This is my first time writing a program as such, if you have any tips on how I can improve it or have any questions, shoot me a message!
+This is my first time writing a python application, if you have any tips on how I can improve it or have any questions, shoot me a message!
   
