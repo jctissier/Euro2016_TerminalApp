@@ -1,5 +1,5 @@
 # Euro2016_TerminalApp_Mac
-If you love Soccer/Football and you want to always be up-to-date with the EURO 2016, this program is perfect for you. All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in Streams.py with your own Reddit username and password. 
+If you love Soccer/Football and you want to always be up-to-date with the EURO 2016, this program is perfect for you. All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in line#15 of Streams.py with your own Reddit username and password. 
 
 #FUNCTIONALITIES
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
