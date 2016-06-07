@@ -37,7 +37,7 @@ $pip install lxml
   
 #For people who havn't run python scripts through terminal before:
   1. Download the folder and move it to your desktop
-  2. Before you run the scripts, Open Streams.py, go to line 13 and change 'username' and 'password' to your Reddit Username and Password
+  2. Before you run the scripts, Open Streams.py, go to line 15 and change 'username' and 'password' to your Reddit Username and Password
   3. Open terminal and type: 
 
     1. $cd  user/Desktop/Euro2016_TerminalApp
