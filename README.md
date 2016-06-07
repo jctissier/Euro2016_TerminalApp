@@ -6,10 +6,12 @@ Get live soccer/football streams, highlights and live stats for EURO 2016 direct
   1. Find any live soccer/football streams within 3 seconds
   2. Find any EURO2016 highlights within 3 seconds
   3. Browse through live stats about the EURO 2016, fixtures, standings, etc...
-![alt text] (/Highlights.gif) 
-![alt text] (/Fixtures.gif)
-![alt text] (/Standings.gif)
-![alt text](/Program%20Directory.png)
+
+![alt text] (/Documentation/live-stream.gif) 
+![alt text] (/Documentation/Highlights.gif) 
+![alt text] (/Documentation/Fixtures.gif)
+![alt text] (/Documentation/Standings.gif)
+![alt text](/Documentation/Program%20Directory.png)
 
 
 #Modules to Install:
