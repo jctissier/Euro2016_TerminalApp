@@ -39,8 +39,10 @@ $pip install lxml
   1. Download the folder and move it to your desktop
   2. Before you run the scripts, Open Streams.py, go to line 13 and change 'username' and 'password' to your Reddit Username and Password
   3. Open terminal and type: 
-      >$cd  user/Desktop/Euro2016_TerminalApp
-      >$python3 Main_Menu.py         OR        python Main_Menu.py     #depends what python version you are running
+
+    1. $cd  user/Desktop/Euro2016_TerminalApp
+    2. $python3 Main_Menu.py         OR        python Main_Menu.py     *depends what python version you are running*
+      
   4. Once you see a menu with different options, everything is working!
 
 #User Input is not Case Sensitive
