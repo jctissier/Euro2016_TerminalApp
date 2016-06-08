@@ -26,7 +26,7 @@ def footballHighlights():
         print("Highlight:", submission.title)
 
     print_input1 = colored("Which game highlights do you want?\n")
-    highlight = raw_input(print_input1)
+    highlight = input(print_input1)
     cprint ("~~~~~~HOLD COMMAND + DOUBLE CLICK = Open link in browser ~~~~~~",'red')
 
     for submission in subreddit.get_hot(limit=80):
@@ -50,7 +50,7 @@ def sportLinks():
 
     print_input5 = colored("\n\nName of the game you want to watch: \n", 'red', attrs=['bold'])
 
-    user_input = raw_input(print_input5)
+    user_input = input(print_input5)
     cprint ("~~~~~~HOLD COMMAND + DOUBLE CLICK = Open link in browser ~~~~~~",'red')
 
     for submission in subreddit.get_hot(limit=12):
@@ -69,13 +69,13 @@ def sportLinks():
 def restartProgram():
     print_restart = colored("Do you need any other links?\nHighlights 'h', Soccer Streams 's', Logout 'L', Main Menu 'MM'\n", 'red',
                             attrs=['bold'])         # restart search if needed
-    restart = raw_input(print_restart)
+    restart = input(print_restart)
 
     while (restart != "h" and restart != "H" and restart != "s" and restart != "S" and restart != "l" and restart != "L" and restart != "mm"
            and restart != "MM"):  # testing for wrong user input
         print_restart = colored("Highlights 'h', Soccer Streams 's', Logout 'L', Main Menu 'MM'\n", 'red',
             attrs=['bold'])  # restart search if needed
-        restart = raw_input(print_restart)
+        restart = input(print_restart)
         restartProgram()
 
     if (restart == "h" or restart == "H"):
