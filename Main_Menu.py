@@ -5,11 +5,11 @@ from termcolor import colored, cprint
 
 def Euro2016():
     input_color = colored("Please choose from the following options:\nStats 'S', Highlights 'H', Live Streams 'L', Exit 'E'\n",'red',attrs=['bold'])
-    Choose_menu = raw_input(input_color)
+    Choose_menu = input(input_color)
 
     while (Choose_menu != "s" and Choose_menu != "S" and Choose_menu != "h" and Choose_menu != "H" and Choose_menu != "l"
            and Choose_menu != "L" and Choose_menu != "E" and Choose_menu != "e"):
-        Choose_menu = raw_input("Please choose from the following options:\nStats 'S', Highlights 'H', Live Streams 'L'\n")
+        Choose_menu = input("Please choose from the following options:\nStats 'S', Highlights 'H', Live Streams 'L'\n")
 
     if (Choose_menu == "s" or Choose_menu == "S"):
         Stats.Choose_Menu()
