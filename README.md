@@ -15,6 +15,11 @@ Get live soccer/football streams, highlights and live stats for EURO 2016 direct
 ![alt text] (/Documentation/Standings.gif)
 ![alt text](/Documentation/Program%20Directory.png)
 
+#Build from Source:
+```
+$ git clone https://github.com/jctissier/Euro2016_TerminalApp.git
+$ cd Euro2016_TerminalApp
+```
 
 #Modules to Install:
 Open Mac terminal and write the statements below
