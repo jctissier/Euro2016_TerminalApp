@@ -32,10 +32,13 @@ def footballHighlights():
     for submission in subreddit.get_hot(limit=80):
         if re.search(highlight, submission.title, re.IGNORECASE):
             print("\nTitle: ", submission.title)
-            comments = submission.comments
-            for comment in comments[0:1]:  # first comment is a bot moderator
-                print(comment.body)  # prints top comments starting from 2nd top comment
-                print("\n")
+            print (submission.selftext)
+            
+            #Use this code below if you want to see the first comments (generates more links)
+            #comments = submission.comments
+            #for comment in comments[0:1]:  # first comment is a bot moderator
+                #print(comment.body)  # prints top comments starting from 2nd top comment
+                #print("\n")
 
     restartProgram()
 
