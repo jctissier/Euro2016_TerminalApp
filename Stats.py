@@ -631,10 +631,10 @@ def GroupStandings():
     if pickGroup == "C" or pickGroup == "c":
         GroupCStandings()
         pickStandings()
-    if pickGroup == "D" or pickGroup == "D":
+    if pickGroup == "D" or pickGroup == "d":
         GroupDStandings()
         pickStandings()
-    if pickGroup == "E" or pickGroup == "E":
+    if pickGroup == "E" or pickGroup == "e":
         GroupEStandings()
         pickStandings()
     if pickGroup == "F" or pickGroup == "f":
