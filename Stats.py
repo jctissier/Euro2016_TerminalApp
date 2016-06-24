@@ -724,7 +724,7 @@ def GroupBStandings():
     GroupPts = groupRankings.xpath('/html/body/div/div[5]/div[3]/div[5]/div[10]//text()')
     Group4Pts = ("".join(map(str, GroupPts)))
 
-    cprint("GroupA   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
+    cprint("GroupB   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
     print('  1.     ' + Group1Pts + space + Group1Played + space + Group1GoalDiff + space + Group1Name)
     print('  2.     ' + Group2Pts + space + Group2Played + space + Group2GoalDiff + space + Group2Name)
     print('  3.     ' + Group3Pts + space + Group3Played + space + Group3GoalDiff + space + Group3Name)
@@ -768,7 +768,7 @@ def GroupCStandings():
     GroupPts = groupRankings.xpath('/html/body/div/div[5]/div[4]/div[5]/div[10]//text()')
     Group4Pts = ("".join(map(str, GroupPts)))
 
-    cprint("GroupA   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
+    cprint("GroupC   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
     print('  1.     ' + Group1Pts + space + Group1Played + space + Group1GoalDiff + space + Group1Name)
     print('  2.     ' + Group2Pts + space + Group2Played + space + Group2GoalDiff + space + Group2Name)
     print('  3.     ' + Group3Pts + space + Group3Played + space + Group3GoalDiff + space + Group3Name)
@@ -812,7 +812,7 @@ def GroupDStandings():
     GroupPts = groupRankings.xpath('/html/body/div/div[5]/div[5]/div[5]/div[10]//text()')
     Group4Pts = ("".join(map(str, GroupPts)))
 
-    cprint("GroupA   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
+    cprint("GroupD   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
     print('  1.     ' + Group1Pts + space + Group1Played + space + Group1GoalDiff + space + Group1Name)
     print('  2.     ' + Group2Pts + space + Group2Played + space + Group2GoalDiff + space + Group2Name)
     print('  3.     ' + Group3Pts + space + Group3Played + space + Group3GoalDiff + space + Group3Name)
@@ -856,7 +856,7 @@ def GroupEStandings():
     GroupPts = groupRankings.xpath('/html/body/div/div[5]/div[6]/div[5]/div[10]//text()')
     Group4Pts = ("".join(map(str, GroupPts)))
 
-    cprint("GroupA   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
+    cprint("GroupE   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
     print('  1.     ' + Group1Pts + space + Group1Played + space + Group1GoalDiff + space + Group1Name)
     print('  2.     ' + Group2Pts + space + Group2Played + space + Group2GoalDiff + space + Group2Name)
     print('  3.     ' + Group3Pts + space + Group3Played + space + Group3GoalDiff + space + Group3Name)
@@ -900,7 +900,7 @@ def GroupFStandings():
     GroupPts = groupRankings.xpath('/html/body/div/div[5]/div[7]/div[5]/div[10]//text()')
     Group4Pts = ("".join(map(str, GroupPts)))
 
-    cprint("GroupA   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
+    cprint("GroupF   Pts  P   GD    TEAM       ", 'red', attrs=['underline'])
     print('  1.     ' + Group1Pts + space + Group1Played + space + Group1GoalDiff + space + Group1Name)
     print('  2.     ' + Group2Pts + space + Group2Played + space + Group2GoalDiff + space + Group2Name)
     print('  3.     ' + Group3Pts + space + Group3Played + space + Group3GoalDiff + space + Group3Name)
