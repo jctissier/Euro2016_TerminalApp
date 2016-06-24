@@ -1,0 +1,4 @@
+praw>=3.5.0
+termcolor>=1.1.0
+lxml>=3.6.0
+requests>=2.10.0
