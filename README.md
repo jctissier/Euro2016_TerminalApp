@@ -1,7 +1,7 @@
 # Euro2016_TerminalApp_Mac
-If you love Soccer/Football and you want to always be up-to-date with the EURO 2016, this program is perfect for you. 
-
 [![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+If you love Soccer/Football and you want to always be up-to-date with the EURO 2016, this program is perfect for you. 
 
 
 **All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in line #15 of Streams.py with your own Reddit username and password.** 
