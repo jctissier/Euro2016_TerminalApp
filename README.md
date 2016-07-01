@@ -1,4 +1,4 @@
-# Euro2016_TerminalApp_Mac
+# Euro2016 TerminalApp
 [![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 If you love Soccer/Football and you want to always be up-to-date with the EURO 2016, this program is perfect for you. 
