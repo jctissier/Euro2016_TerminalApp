@@ -1,34 +1,40 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import Stats
 import Streams
 from termcolor import colored, cprint
 
 
-def Euro2016():
-    input_color = colored("Please choose from the following options:\nStats 'S', Highlights 'H', Live Streams 'L', Exit 'E'\n",'red',attrs=['bold'])
-    Choose_menu = input(input_color)
+def euro_2016():
+    input_color = colored("Please choose from the following options:\n"
+                          "Stats 'S', Highlights 'H', Live Streams 'L', "
+                          "Exit 'E'\n", 'red', attrs=['bold'])
 
-    while (Choose_menu != "s" and Choose_menu != "S" and Choose_menu != "h" and Choose_menu != "H" and Choose_menu != "l"
-           and Choose_menu != "L" and Choose_menu != "E" and Choose_menu != "e"):
-        Choose_menu = input("Please choose from the following options:\nStats 'S', Highlights 'H', Live Streams 'L'\n")
+    # prompt user for input
+    choose_menu = input(input_color).lower()
 
-    if (Choose_menu == "s" or Choose_menu == "S"):
-        Stats.Choose_Menu()
-        Restart_Menu()
+    if (choose_menu == "s"):
+        Stats.choose_menu()
+        euro_2016()
 
-    if (Choose_menu == "H" or Choose_menu == "h"):
+    elif (choose_menu == "h"):
         Streams.footballHighlights()
-        Restart_Menu()
+        euro_2016()
 
-    if (Choose_menu == "l" or Choose_menu == "L"):
+    elif (choose_menu == "l"):
         Streams.sportLinks()
-        Restart_Menu()
+        euro_2016()
 
-    if (Choose_menu == "E" or Choose_menu == "e"):
+    elif (choose_menu == "e"):
         Stats.Logout()
 
-def Restart_Menu():
-    Euro2016()
+    # user must have entered invalid option
+    else:
+        euro_2016()
 
-#Runs entire program
-Streams.login()
-Euro2016()
+
+if __name__ == "__main__":
+    # If this file is program entry point, execute:
+    Streams.login()
+    euro_2016()
