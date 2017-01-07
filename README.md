@@ -5,6 +5,7 @@
 If you love Soccer/Football and you want to always be up-to-date with the EURO 2016, this program is perfect for you. 
 
 :thumbsup:**Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
+**[Updated Project -> More features + easier install](https://github.com/jctissier/Football-CLI)**
 
 **All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in line #15 of Streams.py with your own Reddit username and password.** 
 
