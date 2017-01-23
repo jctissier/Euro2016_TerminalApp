@@ -7,7 +7,7 @@
 
 # Updated Project for Main Football Leagues & Competitions (Web App & Terminal)
 
-If you love Football/Soccer and you want to always be up-to-date with the EURO 2016, this is perfect for you. 
+If you love Football/Soccer and you want to always be up-to-date, this is perfect for you. 
 
 
 **[Updated Terminal Project -> More features & easy pip install](https://github.com/jctissier/Football-CLI)**
