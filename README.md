@@ -6,9 +6,8 @@ If you love Soccer/Football and you want to always be up-to-date with the EURO 2
 
 :thumbsup:**Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
-**[Updated Project -> More features + easier install](https://github.com/jctissier/Football-CLI)**
+**[Updated Terminal Project -> More features & pip install](https://github.com/jctissier/Football-CLI)**
 
-**All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in line #15 of Streams.py with your own Reddit username and password.** 
 
 #Functionalities
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
@@ -27,6 +26,7 @@ Get live soccer/football streams, highlights and live stats for EURO 2016 direct
 $ git clone https://github.com/jctissier/Euro2016_TerminalApp.git
 $ cd Euro2016_TerminalApp
 ```
+**All you need to do is replace REDDIT_USERNAME AND REDDIT_PASSWORD in line #15 of Streams.py with your own Reddit username and password.** 
 
 #Modules to Install:
 Open Mac terminal and write the statements below
@@ -68,5 +68,5 @@ Navigating through the different menus within the app, it is not case sensitive:
 ![alt text] (/Documentation/User_input2.gif)
 
 
-This is my first time writing a python application, if you have any tips on how I can improve it or have any questions, shoot me a message!
+This is my first time writing a python application, if you have any tips on how I can improve it or have any questions, feel free to contact me.
   
