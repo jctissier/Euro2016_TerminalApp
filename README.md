@@ -11,8 +11,8 @@ If you love Soccer/Football and you want to always be up-to-date with the EURO 2
 
 #Functionalities
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
-  1. Find any live soccer/football streams within 3 seconds
-  2. Find any EURO2016 highlights within 3 seconds
+  1. Find any live soccer/football streams within seconds
+  2. Find any EURO2016 highlights within seconds
   3. Browse through live stats about the EURO 2016, fixtures, standings, etc...
 
 ![alt text] (/Documentation/live-stream.gif) 
