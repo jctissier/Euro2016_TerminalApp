@@ -1,4 +1,4 @@
-# Euro2016 App
+# Euro2016 App, Updated Project for Main Football Leagues & Competitions (Web App & Terminal)
 [![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Platform OS X | Linux](http://b.repl.ca/v1/Platform-OS_X%20%7C%20Linux-orange.png)](https://github.com/jctissier/Euro2016_TerminalApp#for-people-who-havnt-run-python-scripts-through-terminal-before)
 
