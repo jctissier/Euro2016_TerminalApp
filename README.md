@@ -5,7 +5,7 @@
 
  :thumbsup:**Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
-
+<br/>
 # Updated Project into Flask App:  [FootyLinks](http://footylinks.herokuapp.com/live)
 
 If you love Football/Soccer and you want to always be up-to-date, this is perfect for you. 
