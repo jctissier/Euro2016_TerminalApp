@@ -13,8 +13,11 @@ If you love Football/Soccer and you want to always be up-to-date, this is perfec
 **[Updated Terminal Project -> More features & easy pip install](https://github.com/jctissier/Football-CLI)**
 
 
+
+
+
 # Previous Documentation for Euro2016_TerminalApp
-#Functionalities
+## Functionalities
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
   1. Find any live soccer/football streams within seconds
   2. Find any EURO2016 highlights within seconds
