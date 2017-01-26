@@ -5,7 +5,7 @@
 [![Platform OS X | Linux](http://b.repl.ca/v1/Platform-OS_X%20%7C%20Linux-orange.png)](https://github.com/jctissier/Euro2016_TerminalApp#for-people-who-havnt-run-python-scripts-through-terminal-before)
 
 
-# Updated Project for Main Football Leagues & Competitions (Web App & Terminal)
+# [Updated Project into Flask App](http://footylinks.herokuapp.com/live)
 
 If you love Football/Soccer and you want to always be up-to-date, this is perfect for you. 
 
@@ -13,6 +13,7 @@ If you love Football/Soccer and you want to always be up-to-date, this is perfec
 **[Updated Terminal Project -> More features & easy pip install](https://github.com/jctissier/Football-CLI)**
 
 
+# Previous Documentation for Euro2016_TerminalApp
 #Functionalities
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
   1. Find any live soccer/football streams within seconds
