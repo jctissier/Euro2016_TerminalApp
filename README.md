@@ -15,7 +15,7 @@ If you love Football/Soccer and you want to always be up-to-date, this is perfec
 
 
 
-
+<br/><br/><br/>
 # Previous Documentation for Euro2016_TerminalApp
 ## Functionalities
 Get live soccer/football streams, highlights and live stats for EURO 2016 directly from your terminal! (MAC)
