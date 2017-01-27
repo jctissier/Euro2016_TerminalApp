@@ -13,7 +13,7 @@ If you love Football/Soccer and you want to always be up-to-date, this is perfec
 
 
 **DEMO**
-[Demo](/Documentation/livestreams.gif)
+![Demo](/Documentation/livestreams.gif)
 
 
 
