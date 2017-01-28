@@ -3,10 +3,10 @@
 [![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
-This web app was inspired by my similar previous project 
-[Documentation and code examples for this project](http://bit.ly/2jdn8sF)
+This web app was inspired by my previous project, [Download old source code](https://github.com/jctissier/Football-CLI)
 
 ### :soccer: FootyLinks :soccer: ###
+[Documentation and code examples for this project](http://bit.ly/2jdn8sF)
 FootyLinks is a Python/Flask web app that I created for fun which helps you find:
 
 * Live football games scores & details
@@ -22,10 +22,6 @@ This is purely for fixing those football cravings without the headache of clicki
 <br/>
 
 
-If you love Football/Soccer and you want to always be up-to-date with highlights, stats and easily finding live streams. 
-
-
-
 **DEMO**
 ![Demo](/Documentation/livestreams.gif)
 ![Demo](/Documentation/highlights_stream.gif)
@@ -33,8 +29,6 @@ If you love Football/Soccer and you want to always be up-to-date with highlights
 
 
 <br/><br/><br/>
-**[Updated Terminal Project -> More features & easy pip install](https://github.com/jctissier/Football-CLI)**
-
 
 # Previous Documentation for Euro2016_TerminalApp
 ## Functionalities
