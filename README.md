@@ -1,11 +1,11 @@
 # Euro2016 CLI 
 
 [![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
- :thumbsup:**Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
-
-[Documentation and code examples](http://bit.ly/2jdn8sF)
+**Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
 This web app was inspired by my previous [CLI project for the EURO 2016](https://github.com/jctissier/Euro2016_TerminalApp)
+## [FootyLinks](http://footylinks.herokuapp.com/live)
+[Documentation and code examples for this project](http://bit.ly/2jdn8sF)
 
 ### :soccer: FootyLinks :soccer: ###
 FootyLinks is a Python/Flask web app that I created for fun which helps you find:
@@ -21,7 +21,7 @@ No logins or emails required, and there will **never** be Ads.
 This is purely for fixing those football cravings without the headache of clicking through multiple websites.😀
 
 <br/>
-# Updated Project into Flask App:  [FootyLinks](http://footylinks.herokuapp.com/live)
+
 
 If you love Football/Soccer and you want to always be up-to-date with highlights, stats and easily finding live streams. 
 
