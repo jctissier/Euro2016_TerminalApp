@@ -21,8 +21,6 @@ No logins or emails required, and there will **never** be Ads.
 This is purely for fixing those football cravings without the headache of clicking through multiple websites.😀
 
 <br/>
-
-
 **DEMO**
 ![Demo](/Documentation/livestreams.gif)
 ![Demo](/Documentation/highlights_stream.gif)
