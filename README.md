@@ -8,7 +8,7 @@
 <br/>
 # Updated Project into Flask App:  [FootyLinks](http://footylinks.herokuapp.com/live)
 
-If you love Football/Soccer and you want to always be up-to-date, this is perfect for you. 
+If you love Football/Soccer and you want to always be up-to-date with highlights, stats and easily finding live streams. 
 
 
 
