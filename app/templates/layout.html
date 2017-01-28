@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FootyLinks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Add style to specific page  -->
+    {% block style %}
+    {% endblock %}
+
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+	<!-- web font  -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+	<!-- Pop up-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js-plugin/magnific-popup/magnific-popup.css')}}">
+	<!-- nekoAnim-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js-plugin/appear/nekoAnim.css')}}"/>
+	<!-- icon fonts -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='font-icons/custom-icons/css/custom-icons.css')}}">
+	<!-- Custom css -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/layout.css')}}">
+	<link type="text/css" id="colors" rel="stylesheet" href="{{ url_for('static', filename='css/sea-green.css')}}">
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/custom.css')}}">
+	<script src="{{ url_for('static', filename='js/modernizr-2.6.1.min.js')}}"></script>
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png')}}"/>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png')}}"/>
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon.ico')}}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    {% block script %}
+    {% endblock %}
+
+</head>
+<body style="overflow-y: scroll; overflow-x: hidden;">
+    <div id="globalWrapper">
+        <section class="mt20">
+            <div class="container" style="align-items: center;">
+                {# Search Box + league tags #}
+                <div class="row">
+                    <iframe class="col-xs-hidden" style="position: absolute;right:0;" src="https://ghbtns.com/github-btn.html?user=jctissier&repo=Euro2016_TerminalApp&type=star&count=true" frameborder="0" scrolling="0" width="110px" height="30px" allowtransparency="true"></iframe>
+                    <br/>
+                    <iframe class="col-xs-hidden" style="padding-top:10px;position: absolute;right:0;" src="https://yvoschaap.com/producthunt/counter.html#href=https%3A%2F%2Fwww.producthunt.com%2Fr%2F8729ce4250f30f%2F67210&layout=wide" width="110" height="65" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                    <div class="span12 text-center mb30">
+                        <h1>
+                            <img width="100" height="128" src="{{ url_for('static', filename='images/reddit_logo_lyon.png')}}" class="col-xs-hidden">
+                            {% block title %} {{ title }} {% endblock %}
+                            <img width="100" height="128" src="{{ url_for('static', filename='images/reddit_logo_manu.png')}}" class="col-xs-hidden">
+                        </h1>
+                    </div>
+                    <div>
+                        <ul class="nav nav-tabs" style="margin-bottom: 0px; border-bottom: none">
+                            {% if live_active %}
+                                <li class="active"><a href="" >Live</a></li>
+                                <li><a href="{{ url_for('match_highlights') }}" >Highlights</a></li>
+                                <li><a href="{{ url_for('livestreams') }}">Live Streams</a></li>
+                                <li><a href="{{ url_for('stats') }}" >Stats</a></li>
+                            {%  elif highlights_active %}
+                                <li><a href="{{ url_for('live_games') }}" >Live</a></li>
+                                <li class="active"><a href="">Highlights</a></li>
+                                <li><a href="{{ url_for('livestreams') }}" >Live Streams</a></li>
+                                <li><a href="{{ url_for('stats') }}" >Stats</a></li>
+                            {%  elif streams_active %}
+                                <li><a href="{{ url_for('live_games') }}" >Live</a></li>
+                                <li><a href="{{ url_for('match_highlights') }}" >Highlights</a></li>
+                                <li class="active"><a href="" >Live Streams</a></li>
+                                <li><a href="{{ url_for('stats') }}" >Stats</a></li>
+                            {%  elif stats_active %}
+                                <li><a href="{{ url_for('live_games') }}" >Live</a></li>
+                                <li><a href="{{ url_for('match_highlights') }}" >Highlights</a></li>
+                                <li><a href="{{ url_for('livestreams') }}" >Live Streams</a></li>
+                                <li class="active"><a href="" >Stats</a></li>
+                            {% endif %}
+                        </ul>
+                    {%  block body %}
+                    {%  endblock %}
+                    </div>
+                </div>
+
+                {#  Extra Content  #}
+                <div class="row">
+                    {%  block content %}
+                    {%  endblock %}
+                </div>
+            </div>
+         </section>
+    </div>
+
+    <!-- footer -->
+    <footer style="padding-top: 0px;">
+        <section id="footerRights" style="margin-top: 0px; border-top: none; padding-top: 20px; padding-bottom: 20px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="socialNetwork" style="margin-bottom: 0px;">
+                        <li><a href="https://github.com/jctissier/Euro2016_TerminalApp" class="tips" title="" data-original-title="Download the source code for this project"><i class="icon-github iconRounded"></i></a></li>
+                        <li style="margin-right: 5px;"></li>
+                        <li><a href="https://www.notion.so/FootyLinks-Documentation-7b66a15ed993420bb1ec514a534039d5" class="tips" title="" data-original-title="Project documentation"><i class="icon-doc-text-inv iconRounded"></i></a></li>
+                        <li style="margin-right: 5px;"></li>
+                        <li><a href="https://gitter.im/FootyLinks/Lobby" class="tips" title="" data-original-title="Chat with me on Gitter"><i class="icon-chat-1 iconRounded"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+<!-- End Document -->
+    {% block scripts %}
+    {% endblock %}
+    <script type="text/javascript" src={{ url_for('static', filename='js-plugin/respond/respond.min.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='bootstrap/js/bootstrap.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/easing/jquery.easing.1.3.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/magnific-popup/jquery.magnific-popup.min.js')}}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js-plugin/hoverdir/jquery.hoverdir.js')}}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js-plugin/hoverdir/css/style.css')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/isotope/jquery.isotope.min.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/neko-share-urls/generator.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/neko-contact-ajax-plugin/js/jquery.form.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/parallax/js/jquery.stellar.min.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/appear/jquery.appear.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js-plugin/toucheeffect/toucheffects.js')}}></script>
+	<script type="text/javascript" src={{ url_for('static', filename='js/custom.js')}}></script>
+    {% if home_page %}
+    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiIyMmFiYTYiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6InBhY21hbiIsInByb25vdW4iOiJtZSIsImxhbmd1YWdlIjoiZW4iLCJicmFuZGVkIjpmYWxzZSwiaW50cm9UZXh0IjoiQWxsIGNvbnRlbnQgYXZhaWxhYmxlIHRocm91Z2ggdGhpcyBzaXRlIGlzIHNjcmFwZWQgaW4gcmVhbCB0aW1lIGZyb20gU3VicmVkZGl0cywgVGhlIEd1YXJkaWFuLCBFU1BOIGFuZCBjYS5zb2NjZXJ3YXkiLCJjaGFubmVscyI6W1siZ2l0aHViIiwiaHR0cHM6Ly9naXRodWIuY29tL2pjdGlzc2llci9FdXJvMjAxNl9UZXJtaW5hbEFwcC8iLCJzb2NpYWwiXSxbInByb2R1Y3RodW50IiwiamN0aXNzaWVyMSIsInNvY2lhbCJdLFsid2Vic2l0ZSIsImh0dHA6Ly9iaXQubHkvMmpkbjhzRiIsImNsYXNzaWMiXSxbImVtYWlsIiwiamVhbmNsYXVkZS50Y2FAZ21haWwuY29tIiwiY2xhc3NpYyJdXX0='></script>
+    {% endif %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56982630-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{#ADD A BUTTON TO GO BACK TO LIVESTREAMS#}
+    {% block content %}
+        <div class="col-md-12 boxFocus pt20" style="margin-bottom: 40px;">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover" style="margin-bottom: 50px;">
+                {% if no_games %}
+                        <div style="margin-bottom: 150px;margin-top: 3px;" class="alert alert-danger">The links for this stream do not exist anymore or no links have yet been posted... &nbsp;<a href="{{ url_for('livestreams') }}" class="alert-link">Back to Live Streams</a></div>
+
+                {% else %}
+                    <a href="{{ url_for('livestreams') }}"><button style="margin-left:10px;padding-right: 10px;margin-top:15px;" type="button" class="btn btn-info btn-sm">
+                                <b width="20" class="icon-reply"></b><b>Back to Live Streams</b></button></a>
+                    {% for i in links %}
+                        {% if loop.index == 1 %}
+                            <h4 style="margin-left:10px;margin-top:15px;margin-bottom: 15px;">{{ current_time }}</h4>
+                            <h3 style="margin-top: 20px;"><b>&nbsp;<a target="_blank" href="{{ i[0] }}">{{ game_title }}</a></b></h3>
+                            <h5 style="margin-left:10px;">{{ kick_off }}</h5>
+                            <h5 style="margin-left:10px;">{{ competition }}</h5>
+                            <h5 style="margin-left:10px;">{{ nation }}</h5>
+                        {% endif %}
+                            {% if loop.index == 1 %}
+                            <tr class="warning">
+                                <td><b>Stream Links (Ranked by Upvotes) <a href="{{ url_for('stream_links', stream=redirect) }}"><button style="margin-left: 20px;" type="button" class="btn btn-success btn-sm">
+                                <b width="20" class="icon-arrows-cw"></b><b>Refresh</b></button></a></b></td>
+                            </tr>
+                            {% endif %}
+                            <tr>
+                                <td><img style="margin-right: 10px;" width="20" height="30" src="{{ url_for('static', filename='images/reddit_logo_lyon.png')}}">
+                                    <b><a target="_blank" href="{{ i[2] }}">{{ i[1] }}</a></b></td>
+                            </tr>
+                    {% endfor %}
+                        <tr class="warning">
+                            <td></td>
+                        </tr>
+                {% endif %}
+                </table>
+            </div>
+        </div>
+
+    {% endblock %}

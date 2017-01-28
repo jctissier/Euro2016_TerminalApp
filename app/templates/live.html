@@ -1,0 +1,122 @@
+{% block script %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56982630-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+        function openWin(link) {
+            this.open(link, "myWindow", "width=800,height=350");
+        }
+    </script>
+
+{% endblock %}
+
+{% extends "layout.html" %}
+    {# Find and display Live Games in a table #}
+
+    {% block body %}
+        {% if no_matches %}
+            <div id="content" style="margin-bottom: 50px;margin-top: 2px;" class="alert alert-danger">There are currently no live matches.</div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover" style="margin-bottom: 50px;">
+                    {% for f in fixtures_table %}
+                        {% set x = 0 %}
+                        {% if loop.index == 1 %}
+                            <tr class="warning">
+                                <th style="line-height: 3;">League Fixtures</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                <a href="{{ url_for('fixtures',fixtures='epl') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/EPL.png')}}" style="margin-right: 15px;" alt="Premier League"></a>
+                                <a href="{{ url_for('fixtures',fixtures='liga') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/liga.png')}}" style="margin-right: 15px;" alt="La Liga"></a>
+                                <a href="{{ url_for('fixtures',fixtures='bundesliga') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/bundesliga.png')}}" style="margin-right: 15px;" alt="Bundesliga"></a>
+                                <a href="{{ url_for('fixtures', fixtures='seriea') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/seriea.png')}}" style="margin-right: 15px;" alt="Serie A"></a>
+                                <a href="{{ url_for('fixtures',fixtures='ligue1') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/ligue1.png')}}" alt="Ligue 1"></a>
+                                </th>
+                            </tr>
+                        {% endif %}
+                        {% if f[0][0] %}
+                            <tr class="info">
+                                <td style="width: 25%;"><b>{{ f[0][0] }}</b></td>
+                                <td style="width: 25%;"><b>{{ f[0][1] }}</b></td>
+                                <td style="width: 10%;"></td>
+                                <td></td>
+                            </tr>
+                        {% endif %}
+                        {% if f[1][2]%}
+                        <tr>
+                            <td style="width: 25%;">{{ f[1][0] }}</td>
+                            <td style="text-align: right;width: 25%;">{{ f[1][2] }}<img src="{{ f[1][1] }}" width="22" height="20" style="margin-left: 5px;"></td>
+                            <td style="width: 10%;text-align: center;">vs.</td>
+                            <td><img src="{{ f[1][4] }}" width="22" height="20" style="margin-right: 5px;">{{ f[1][3] }}</td>
+                        </tr>
+                        {% elif loop.index  == 2 and f[0][2]%}
+                        <tr>
+                            <td style="width: 25%;">{{ f[1][0] }}</td>
+                            <td style="text-align: right;width: 25%;"><img src="{{ f[1][1] }}" width="22" height="20" style="margin-left: 5px;">{{ f[1][2] }}</td>
+                            <td style="width: 10%;text-align: center;">vs.</td>
+                            <td><img src="{{ f[1][4] }}" width="22" height="20" style="margin-right: 5px;">{{ f[1][3] }}/></td>
+                        </tr>
+                        {% endif %}
+                        {% set x =+ 1 %}
+                {% endfor %}
+                <tr class="warning">
+                    <td style="width: 130px;"></td>
+                    <td style="width: 240px;"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </table>
+            </div>
+        {% else %}
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" style="margin-bottom: 150px;">
+                <tr class="warning">
+                    {% if live_streams %}
+                        <th width="8%">Time<a href="{{ url_for('livestreams') }}"><button style="margin-left: 20px;" type="button" class="btn btn-warning btn-sm"><b style="margin-right: 2px;" width="20" class="icon-check"></b><b>Streams:&nbsp;{{ count }}</b></button></a></th>
+                    {% else %}
+                        <th width="20%">Time<button style="margin-left: 5px;" type="button" class="btn btn-warning btn-sm col-md-hidden"><b>No Live Streams</b><img style="margin-left: 5px;" width="15" src="{{ url_for('static', filename='images/sad.svg')}}"></button></th>
+                    {% endif %}
+                    <th style="text-align: right;width: 25%">Home Team</th>
+                    <th style="text-align: center;width: 6%;"></th>
+                    <th style="text-align: center;width: 3%;">vs.</th>
+                    <th style="text-align: center;width: 6%;"></th>
+                    <th>Away Team</th>
+                    <th style="width: 7%;"><a href="{{ url_for('live_games') }}"><button type="button" class="btn btn-success btn-sm"><b width="20" class="icon-arrows-cw"></b><b>Refresh</b></button></a></th>
+                </tr>
+                {% for game in live %}
+                    <tr class="info">
+                        <td width="96px;">{{ game[4] }}</td>
+                        <td style="text-align: right;">
+                            {{ game[0] }}<img src="{{ game[6] }}" width="22" style="padding-left: 5px;"></td>
+                        <td style="text-align: center;"><b>{{ game[2] }}</b></td>
+                        <td style="text-align: center;"> - </td>
+                        <td style="text-align: center;">&nbsp;<b>&nbsp;{{ game[3] }}</b></td>
+                        <td><img src="{{ game[7] }}" width="22" style="padding-right: 5px;">{{ game[1] }}</td>
+                        {% if game[8] %}
+                        <td style="width: 7%;"><a target="_blank" onclick="openWin('/live-match-details?gameid={{game[8]}}')" >
+                            <button type="button" class="btn btn-success btn-sm"><b  style="padding-right:4px;" width="20" class="icon-list-bullet"></b><b>Details</b></button></a></td>
+                        {% else %}
+                           <td style="width: 7%;"></td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+                <tr class="warning">
+                    <td style="width: 130px;"></td>
+                    <td style="width: 240px;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        {% endif %}
+    {% endblock %}

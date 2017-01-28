@@ -1,0 +1,56 @@
+{% extends "stat_layout.html" %}
+    {% block table %}
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" style="margin-bottom: 50px;">
+                {% for f in fixtures_data %}
+                    {% set x = 0 %}
+                    {% if loop.index == 1 %}
+                        <tr class="warning">
+                            <th >Match Fixtures</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    {% endif %}
+                    {% if f[0]%}
+                        <tr class="info">
+                            <td style="width: 20%;"><b>{{ f[0] }}</b></td>
+                            <td style="width: 25%;"><b></b></td>
+                            <td style="width: 5%;"></td>
+                            <td style="width: 25%;"></td>
+                            <td></td>
+                        </tr>
+                    {% endif %}
+                    <tr>
+                        <td style="width: 25%;">{{ f[1] }}</td>
+                        <td style="text-align: right;width: 25%;">{{ f[3] }}<img src="{{ f[2] }}" width="22" height="20" style="margin-left: 5px;"></td>
+                        <td style="width: 10%;text-align: center;">vs.</td>
+                        <td><img src="{{ f[5] }}" width="22" height="20" style="margin-right: 5px;">{{ f[4] }}</td>
+                        <td></td>
+                    </tr>
+                    {% set x =+ 1 %}
+                {% endfor %}
+            <tr class="warning">
+                <td style="width: 130px;"></td>
+                <td style="width: 240px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+        </div>
+    {% endblock %}
+
+{% block scripts %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56982630-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}

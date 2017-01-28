@@ -1,0 +1,78 @@
+{% extends "stat_layout.html" %}
+
+
+    {% block table %}
+        <div class="table-responsive" id="content">
+            <table class="table table-striped table-hover">
+                <tr class="warning">
+                    <th style="width: 30px;">Rank</th>
+                    <th style="width: 60px;">Team Name</th>
+                    <th style="width: 10%;">MP</th>
+                    <th style="width: 10%;">W&nbsp;</th>
+                    <th style="width: 10%;">D&nbsp;</th>
+                    <th style="width: 10%;">L&nbsp;</th>
+                    <th style="width: 10%;">GD</th>
+                    <th style="width: 10%;">Pts</th>
+                </tr>
+                {% for rank in stats %}
+                    {% if loop.index < 4 %}
+                    <tr class="success">
+                        <td style="width: 5%;">{{ rank[0] }}</td>
+                        <td>{{ rank[1] }}</td>
+                        <td>{{ rank[2] }}</td>
+                        <td>{{ rank[3] }}</td>
+                        <td>{{ rank[4] }}</td>
+                        <td>{{ rank[5] }}</td>
+                        <td>{{ rank[6] }}</td>
+                        <td><b>{{ rank[7] }}</b></td>
+                    </tr>
+                    {% elif loop.index < 18 %}
+                    <tr>
+                        <td style="width: 5%;">{{ rank[0] }}</td>
+                        <td>{{ rank[1] }}</td>
+                        <td>{{ rank[2] }}</td>
+                        <td>{{ rank[3] }}</td>
+                        <td>{{ rank[4] }}</td>
+                        <td>{{ rank[5] }}</td>
+                        <td>{{ rank[6] }}</td>
+                        <td><b>{{ rank[7] }}</b></td>
+                    </tr>
+                    {% else %}
+                    <tr class="danger">
+                        <td style="width: 5%;">{{ rank[0] }}</td>
+                        <td>{{ rank[1] }}</td>
+                        <td>{{ rank[2] }}</td>
+                        <td>{{ rank[3] }}</td>
+                        <td>{{ rank[4] }}</td>
+                        <td>{{ rank[5] }}</td>
+                        <td>{{ rank[6] }}</td>
+                        <td><b>{{ rank[7] }}</b></td>
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+                <tr class="warning">
+                    <td style="width: 130px;"></td>
+                    <td style="width: 240px;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    {% endblock %}
+
+{% block scripts %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56982630-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}

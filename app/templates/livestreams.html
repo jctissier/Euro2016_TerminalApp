@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+    {#  List of matches with stream links  #}
+    {% block content %}
+        {% if no_matches %}
+        <div style="margin-bottom: 150px;margin-top: 3px;" class="alert alert-danger">There are currently no live streams! &nbsp; <a href="{{ url_for('live_games') }}" class="alert-link">Check Live Matches</a></div>
+        {% else %}
+        <div class="col-md-12 boxFocus pt20" style="margin-bottom: 40px;">
+            <h3 style="margin-top: 30px;">Current Live Streams:</h3>
+            <h4 style="margin-bottom: 25px;">{{ current_time }}</h4>
+            <div class="row">
+                <div class="col-md-2 col-xs-hidden col-md-offset-1">
+                    <u>Match Time</u>
+                </div>
+                <div class="col-md-6 col-xs-hidden">
+                    <u style="padding-left: 5px;">Live Match (Click for Reddit Post)</u>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row" style="margin-bottom: 15px;">
+                {% for i in streams %}
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-1" style="padding-top: 10px;line-height: 2; padding-left: 25px;">
+                            {{ i[0] }}
+                        </div>
+                        <div class="col-md-4" style="padding-bottom: 10px;">
+                            <ul style="line-height: 2.5;" class="list-unstyled iconList">
+                                <li><a href="{{ i[2] }}">{{ i[1] }}</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="{{ url_for('stream_links', stream=i[3]) }}">
+                                <button style="margin-top: 5px;" type="button" class="btn btn-success btn-sm">
+                                    <b style="margin-right: 5px;" width="20" class="icon-link"></b>
+                                    <b>Click for Links!</b>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+    {% endblock %}
+
+{% block scripts %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56982630-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}

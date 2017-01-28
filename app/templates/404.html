@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <section id="page">
+        <section id="content" class="mt30 pb30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <article class="boxIcon hover text-center" >
+                            <a href=https://github.com/jctissier class="tips" data-original-title="Fork me on Github"
+                            style="padding-top:0px;padding-bottom: 5px;"> <i class="icon-github-circled iconBig iconRounded"></i></a>
+                            <h1> <img style="margin-right: 15px;" width="40" src="{{ url_for('static', filename='images/sad.svg')}}">
+                                Something Broke
+                                <img style="margin-left: 15px;" width="40" src="{{ url_for('static', filename='images/sad.svg')}}"></h1>
+                            <a href="{{ url_for('live_games') }}" class="btn btn-lg btn-primary mt15" style="margin-bottom: 40px;">Back to homepage</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+{%  endblock %}
+
+{% block scripts %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56982630-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}

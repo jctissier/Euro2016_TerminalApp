@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+    {#  Search box + Tag filtering   #}
+    {% block body %}
+        <div class="col-md-12 boxFocus pt30 mb40">
+            <div class="row">
+                <div class="col-md-5" >
+                    <form method="POST" action="/highlights" id="contactform" role="form" class="mb15">
+
+                        <div class="form-group">
+                            <label for="name">Search Highlights:</label>
+                            <input type="text" class="form-control" name="match_name" id="name" placeholder="Name of the match..."  title="Search by Match Name"/>
+                        </div>
+                        <button name="submitform" type="submit"  value="Search" class="btn btn-lg btn-primary" id="submit">Search</button>
+                        <button name="refresh" type="submit"  value="Refresh" class="btn btn-lg btn-primary" id="refresh" style="margin-left: 10px;">All Highlights</button>
+                    </form>
+                    <label>Clubs:</label><br/>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6 mb15">
+                            <a href="{{ url_for('match_highlights',tag='manchester united') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/manu.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='manchester city') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/manc.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='arsenal') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/arsenal.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='chelsea') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/chelsea.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='barcelona') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/barcelona.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='real madrid') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/real.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='athletico madrid') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/athletico.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='juventus') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/juventus.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='milan') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/milan.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='lyon') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/lyon.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='paris saint germain') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/psg.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='monaco') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/monaco.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='bayern munich') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/bayern.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='borussia dortmund') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/bvb.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='sevilla') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/sevilla.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                            <a href="{{ url_for('match_highlights',tag='liverpool') }}"><img width="40" height="40" src="{{ url_for('static', filename='images/logo/liverpool.png')}}" style="margin-right: 5px;margin-left:5px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <section class="tagCloud">
+                        <label>Football Leagues:</label><br/>
+                        <form method="POST">
+                            {%  for t in TAG_DICT["Football Leagues"] %}
+                            <a style="color: #22aba6;" href="{{  url_for('match_highlights', tag=t[0])}}" class="w2">{{t[1]}}</a>
+                            {% endfor %}
+                        </form>
+                    </section>
+                    <section class="tagCloud">
+                        <label>Competitions:</label><br/>
+                        <form method="POST">
+                        {%  for t in TAG_DICT["Competitions"] %}
+                            <a style="color: #22aba6;" href="{{  url_for('match_highlights', tag=t[0])}}" class="w2">{{t[1]}}</a>
+                        {% endfor %}
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    {%  endblock %}
+
+    {#  List of matches with highlights links  #}
+    {% block content %}
+        <div class="col-md-12 boxFocus pt20" style="margin-bottom: 40px;">
+            <h3>Highlights:</h3>
+            <div class="row">
+                <div class="col-md-2 col-xs-hidden">
+                    <u>Date</u>
+                </div>
+                <div class="col-md-5 col-md-pull-0 col-xs-hidden">
+                    <u>Match Name (Reddit Thread with more Links)</u>
+                </div>
+                <div class="col-md-5 col-xs-hidden">
+                    <u>Links</u>
+                </div>
+            </div>
+            {% for i in zipped_data %}
+            <div class="row">
+                <div class="col-md-2">
+                    {{ i.2 }}:
+                </div>
+                <div class="col-md-5 col-md-pull-0">
+                    <a target="_blank" href="{{ i.1 }}">{{ i.0 }}</a>
+                    <br/>
+                </div>
+                <div class="col-md-5">
+                    <a target="_blank" href="{{ i.3 }}"> {{ i.4 }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    {% endblock %}
+
+{% block scripts %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56982630-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}
+

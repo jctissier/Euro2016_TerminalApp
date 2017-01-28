@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+    {% block body %}
+        <div class="col-md-12 boxFocus pt30 mb40">
+            <div class="row">
+                <div id="globalWrapper">
+                    <section id="content" class="pb30">
+                        <div class="container">
+                            <div class="row">
+                                <aside id="sidebar" class="col-md-3" style="padding-top: 40px;margin-right:35px;">
+                                    <nav id="subnav">
+                                        <ul>
+                                        {% if premier_league %}
+                                            <li><a class="active" style="width: 220px;" href=""><img width="40" height="45" src="{{ url_for('static', filename='images/EPL.png')}}" >
+                                                Premier League<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% else %}
+                                            <li><a style="width: 220px;" href="{{  url_for('stats', league="epl")}}">
+                                                <img width="40" height="45" src="{{ url_for('static', filename='images/EPL.png')}}" >
+                                                Premier League<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% endif %}
+                                        {% if bundesliga %}
+                                            <li><a href="" class="active" style="width: 220px;"><img width="40" height="45" src="{{ url_for('static', filename='images/bundesliga.png')}}" >
+                                                Bundesliga<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% else %}
+                                            <li><a href="{{  url_for('stats', league="bundesliga")}}" style="width: 220px;">
+                                                <img width="40" height="45" src="{{ url_for('static', filename='images/bundesliga.png')}}">
+                                                Bundesliga<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% endif %}
+                                        {% if ligue1 %}
+                                            <li><a href="" class="active" style="width: 220px;"><img width="40" height="45" src="{{ url_for('static', filename='images/ligue1.png')}}" >
+                                                Ligue 1<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% else %}
+                                            <li><a href="{{  url_for('stats', league="ligue1")}}" style="width: 220px;">
+                                                <img width="40" height="45" src="{{ url_for('static', filename='images/ligue1.png')}}" >
+                                                Ligue 1<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% endif %}
+                                        {% if liga %}
+                                            <li><a href="" class="active" style="width: 220px;"><img width="40" height="45" src="{{ url_for('static', filename='images/liga.png')}}" >
+                                                La Liga<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% else %}
+                                            <li><a href="{{  url_for('stats', league="liga")}}" style="width: 220px;">
+                                                <img width="40" height="45" src="{{ url_for('static', filename='images/liga.png')}}" >
+                                                La Liga<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% endif %}
+                                        {% if seriea %}
+                                            <li><a href="" class="active" style="width: 220px;"><img width="40" height="45" src="{{ url_for('static', filename='images/seriea.png')}}" >
+                                                Serie A<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% else %}
+                                            <li><a href="{{  url_for('stats', league="seriea")}}" style="width: 220px;">
+                                                <img width="40" height="45" src="{{ url_for('static', filename='images/seriea.png')}}" >
+                                                Serie A<i class=" icon-right-open-mini" style="padding-top:5px;"></i></a></li>
+                                        {% endif %}
+                                        </ul>
+                                    </nav>
+                                </aside>
+                                <section class="col-md-9 table-border-fix" style="padding-top: 15px;">
+                                    <div class="row mb30">
+                                        <div class="row">
+                                            <nav id="filter" class="span12 text-center">
+                                                <div class="btn-group">
+                                                    {% if premier_league %}
+                                                        <a href="{{  url_for('stats', league="epl")}}" class="btn btn-default">Standings</a>
+                                                        <a href="{{ url_for('match_details', details="epl")}}" class="btn btn-default">Match Details</a>
+                                                        <a href="{{ url_for('fixtures', fixtures="epl")}}" class="btn btn-default">Fixtures</a>
+                                                        <a href="{{ url_for('topscorer', topscorer="epl")}}" class="btn btn-default">Top Scorers</a>
+
+                                                    {% elif bundesliga %}
+                                                        <a href="{{  url_for('stats', league="bundesliga")}}" class="btn btn-default">Standings</a>
+                                                        <a href="{{ url_for('match_details', details="bundesliga")}}"  class="btn btn-default">Match Details</a>
+                                                        <a href="{{ url_for('fixtures', fixtures="bundesliga")}}" class="btn btn-default">Fixtures</a>
+                                                        <a href="{{ url_for('topscorer', topscorer="bundesliga")}}" class="btn btn-default">Top Scorers</a>
+
+                                                    {% elif seriea %}
+                                                        <a href="{{  url_for('stats', league="seriea")}}" class="btn btn-default">Standings</a>
+                                                        <a href="{{ url_for('match_details', details="seriea")}}" class="btn btn-default">Match Details</a>
+                                                        <a href="{{ url_for('fixtures', fixtures="seriea")}}" class="btn btn-default">Fixtures</a>
+                                                        <a href="{{ url_for('topscorer', topscorer="seriea")}}" class="btn btn-default">Top Scorers</a>
+
+                                                    {% elif liga %}
+                                                        <a href="{{  url_for('stats', league="liga")}}" class="btn btn-default">Standings</a>
+                                                        <a href="{{ url_for('match_details', details="liga")}}" class="btn btn-default">Match Details</a>
+                                                        <a href="{{ url_for('fixtures', fixtures="liga")}}" class="btn btn-default">Fixtures</a>
+                                                        <a href="{{ url_for('topscorer', topscorer="liga")}}" class="btn btn-default">Top Scorers</a>
+
+                                                    {% elif ligue1 %}
+                                                        <a href="{{  url_for('stats', league="ligue1")}}" class="btn btn-default">Standings</a>
+                                                        <a href="{{ url_for('match_details', details="ligue1")}}" class="btn btn-default">Match Details</a>
+                                                        <a href="{{ url_for('fixtures', fixtures="ligue1")}}" class="btn btn-default">Fixtures</a>
+                                                        <a href="{{ url_for('topscorer', topscorer="ligue1")}}" class="btn btn-default">Top Scorers</a>
+
+                                                    {% endif %}
+                                                </div>
+                                            </nav>
+                                        </div>
+
+                                        {% block table %}
+                                        {% endblock %}
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    {%  endblock %}

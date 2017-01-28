@@ -1,0 +1,53 @@
+{% extends "stat_layout.html" %}
+    {% block table %}
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <tr class="warning">
+                    <th style="width: 30px;">Rank</th>
+                    <th style="width: 60px;">Player</th>
+                    <th style="width: 20px;">Team</th>
+                    <th style="width: 15%;text-align: center;">Penalties</th>
+                    <th style="width: 15%;text-align: center;">Goals</th>
+                </tr>
+                {% for rank in topscorer_list %}
+                    {% if loop.index < 2 %}
+                    <tr class="success">
+                        <td style="width: 10%;">{{ rank[0] }}</td>
+                        <td>{{ rank[1] }}</td>
+                        <td>{{ rank[2] }}</td>
+                        <td style="text-align: center;">{{ rank[3] }}</td>
+                        <td style="text-align: center;"><b>{{ rank[4] }}</b></td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td style="width: 5%;">{{ rank[0] }}</td>
+                        <td>{{ rank[1] }}</td>
+                        <td>{{ rank[2] }}</td>
+                        <td style="text-align: center;">{{ rank[3] }}</td>
+                        <td style="text-align: center;"><b>{{ rank[4] }}</b></td>
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+                <tr class="warning">
+                    <td style="width: 130px;"></td>
+                    <td style="width: 240px;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    {% endblock %}
+
+{% block scripts %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56982630-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}
