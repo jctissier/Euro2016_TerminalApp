@@ -1,12 +1,13 @@
 # [FootyLinks](http://footylinks.herokuapp.com/live)
 
-[![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/FootyLinks/Lobby](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/FootyLinks/Lobby)
 **Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
 This web app was inspired by my previous project, [Download old source code](https://github.com/jctissier/Football-CLI)
 
 ### :soccer: FootyLinks :soccer: ###
 [Documentation and code examples for this project](http://bit.ly/2jdn8sF)
+
 FootyLinks is a Python/Flask web app that I created for fun which helps you find:
 
 * Live football games scores & details
