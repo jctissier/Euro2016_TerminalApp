@@ -3,7 +3,7 @@
 [![Join the chat at https://gitter.im/stvhwrd/Euro-2016-CLI](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/stvhwrd/Euro-2016-CLI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
-This web app was inspired by my previous [CLI project for the EURO 2016](https://github.com/jctissier/Euro2016_TerminalApp)
+This web app was inspired by my similar previous project 
 [Documentation and code examples for this project](http://bit.ly/2jdn8sF)
 
 ### :soccer: FootyLinks :soccer: ###
