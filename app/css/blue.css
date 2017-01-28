@@ -1,0 +1,772 @@
+/* 
+    Document   : colors
+    Author     : Little Neko
+    Description: template colors
+    */
+
+
+/* Table of Content
+==================================================
+
+#BOOSTRAP CUSTOMIZATION
+#TYPOGRAPHY
+#PARALLAX STUFF
+#LINKS AND BUTTONS
+#HEADER
+#MAIN MENU 
+#FOOTER 
+#HOME
+#PAGES 
+#SLIDERS
+#BLOG
+#PORTFOLIO
+#MISCELANIOUS
+#NEKO CSS FRAMEWORK
+
+*/
+/* COLORS :  538BAF  / 6ba1c4 / f7f7f7 /
+
+
+/* BOOSTRAP CUSTOMIZATION
+================================================== */
+
+/** tabs and accordion**/
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {background:#538BAF;}
+.nav-tabs > li > a {border-left:1px dashed #eee; border-top:1px dashed #eee; border-right:1px dashed #eee;}
+
+
+.panel-default {
+	border:1px dashed #eee;
+	box-shadow:none;
+}
+.panel-default>.panel-heading {background:#fff;   border-top:none;color:#555;}
+.panel-group .panel-heading + .panel-collapse .panel-body { border-top:1px dashed #eee;}
+.panel-default>.panel-heading:hover, .nav>li>a:hover, .nav>li>a:focus{color:#538BAF;}
+.panel-default>.panel-heading:hover a, .panel-default>.panel-heading:hover a:after, .nav>li>a:hover{color:#538BAF; }
+.panel-title>a {color:#333;}
+.panel-title>a:hover {text-decoration: none;}
+.panel-body{background:#FDFDFD;}
+
+/*** pagination ***/
+
+.pagination>li>a {
+	background: none repeat scroll 0 0 #F7F7F7;
+	color: #111111;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+	background: none repeat scroll 0 0 #538BAF ;
+}
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{
+	background: none repeat scroll 0 0 #538BAF ;
+	border-color:#538BAF ;
+	color:#fff;
+}
+
+.pager li>a, .pager li>span {border-radius: 4px;}
+.pager li>a:hover, .pager li>a:focus {background:#538BAF ; color:#fff; border-color:#538BAF ;}
+
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background:#538BAF;}
+
+.progress-bar {background-color:#538BAF;}
+.progress-bar-success {
+	background-color: #5BB75B;
+}
+.progress-bar-info {
+	background-color: #49AFCD;
+}
+.progress-bar-warning {
+	background-color: #FAA732;
+}
+.progress-bar-danger {
+	background-color: #DA4F49;
+}
+
+
+/* END BOOSTRAP CUSTOMIZATION
+================================================== */
+
+/* TYPOGRAPHY
+================================================== */
+
+body {
+	color:#777;
+	background: #fefefe;
+}
+
+blockquote small {
+	color:inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#333;
+}
+
+h1 strong {
+	background:#538BAF;
+	color:#fff;
+}
+h2 i {color:#999}
+.subTitle  {
+	color:#999;	
+}
+.largeQuote {background:#FDFDFD; border-top: 1px dashed #eee; border-bottom: 1px dashed #eee;}
+.title {
+	background-color:#fff;
+	border-bottom: 2px solid rgba(1,1,1,0.075);
+	border-top: 1px solid rgba(1,1,1,0.05);
+}
+
+
+/*** parallax sections ***/
+.paralaxMask:after, .paralaxMask:before {
+	display: block;
+	content: "";
+	height: 22px;
+	position: absolute;
+	width: 100%;
+	border-radius: 60%;
+	box-shadow: 0px 0 22px rgba(0, 0, 0, 0.5);
+}
+.paralaxMask:after {
+	bottom: -22px;
+}
+.paralaxMask:before {
+	top: -22px;
+}
+.paralaxMask {
+	background: rgba(0, 0, 0, 0.33);
+}
+.paralaxText .iconRounded {border-color: #fff;}
+.paralaxText .iconRounded:hover {border-color: #fff; background:none;}
+.paralaxText h2 {background: rgba(255, 255, 255, 0.1); border:1px solid rgba(255, 255, 255, 0.25)}
+
+
+/* END TYPOGRAPHY
+================================================== */
+
+/* PARALLAX STUFF
+================================================== */
+#home, #paralaxSlice1, #paralaxSlice2, #paralaxSlice3 {background-color:#538BAF;}
+
+#home, #noSliderWrapper {background:url('../images/theme-pics/textures/sea-green-b-2.jpg') no-repeat #538BAF;}
+
+
+.paralaxText blockquote, .paralaxText h1, .paralaxText h2, .paralaxText h2 small, .paralaxText h3, .paralaxText p, .paralaxText i{ color:#fff;}
+
+/* END PARALLAX STUFF
+================================================== */
+
+/* LINKS AND BUTTONS
+================================================== */
+
+a {color:#538BAF;}
+
+a:hover, .scrollspyNav .active a {color:#538BAF;}
+
+ul.iconsList li a {color:#555;}
+
+ul.iconsList li a:hover, ul.iconsList i {color:#538BAF;}
+
+/*** buttons ***/
+.btn {
+	background: #F7F7F7;
+	color: #111111;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+
+}
+
+.btn:hover {
+	background: #6ba1c4;
+	border-color:#6ba1c4;
+	color: #FFFFFF;
+
+
+}
+.btn-border {
+	background:none;
+	border:2px solid #fff;
+}
+
+.btn-inverse {
+	background: none repeat scroll 0 0 #555555;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	color: #FFFFFF!important;
+}
+
+.btn-inverse:hover{
+	background: none repeat scroll 0 0 #F7F7F7;
+	border-bottom: 1px solid rgba(150, 150, 150, 0.25);
+	color: #111111!important;
+}
+
+.btn-primary {
+	background: #538BAF ;
+	color: #FFFFFF!important;
+}
+.btn-info {
+	background: #49AFCD;
+	color: #FFFFFF;
+}
+.btn-success {
+	background: #5BB75B;
+	color: #FFFFFF;
+}
+.btn-warning {
+	background: #FAA732;
+	color: #FFFFFF;
+}
+.btn-danger {
+	background: #DA4F49;
+	color: #FFFFFF!important;
+}
+.btn-link, .btn-link:active, .btn-link[disabled], .btn-link:hover {
+	background:none;
+	border:none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+	color:#49AFCD;
+}
+.btnWrapper {
+	border:1px solid #ccc;
+}
+
+/* END LINKS AND BUTTONS
+================================================== */
+/* HEADER
+================================================== */
+
+ul.quickMenu li a, .contactPhone {color:#F7F7F7;}
+ul.quickMenu li a:hover {color:#555;}
+
+
+/* END HEADER
+================================================== */
+
+/* MAIN MENU 
+================================================== */
+
+#mainHeader{
+	background-color:#fefefe ;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#mainHeader .navbar-inner {
+	background: #444;
+	filter:none !important;
+}
+
+#mainHeader.fixedHeader{background:rgba(255, 255, 255, 0.95);}
+#mainMenu .navbar-nav li{
+	border-bottom:1px dashed #eee;
+}
+#mainMenu .navbar-nav li:last-child, #mainMenu .navbar-nav li:last-child a{
+	border-bottom:none !important;
+}
+
+.navbar-nav > li > a > i, .navbar-default .navbar-nav > li > a {
+	color:#aaa;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, #resMainMenu li.active>a {
+	color:#538BAF;
+	background:none;
+}
+.navbar-nav > li.sep:before  {color:#eee;}
+.navbar-default .navbar-nav > li > a.active {color:#538BAF;}
+.navbar-nav ul li a{color:#999;}
+.navbar-nav li.hover>a, .navbar-nav ul li a:hover{color:#538BAF;}
+.navbar-nav ul li.hover>a {color:#fff;}
+
+
+/*** mega menu ***/
+
+
+/*** MEDIA QUERIES ***/
+
+@media(max-width:767px){}
+
+@media(min-width:768px){
+	
+	/* normal header (no class on body) */
+	.navbar-nav ul {background:#333;}
+	.navbar-nav ul li a:hover, .navbar-nav ul li.hover>a{background:#538BAF; color:#fff;}
+
+	#mainMenu .navbar-nav li{border-bottom:none;}
+	#mainMenu .navbar-nav ul li a{border-bottom:1px solid #444;}
+
+	.nekoMegaMenu {background:#444;}
+	.nekoMegaMenu h2 {color:#eee;}
+	
+	#boxedLayout {background: #538BAF;}
+
+
+	
+}
+
+@media(min-width:992px){}
+
+@media(min-width:1200px){}
+
+/*** END MEDIA QUERIES ***/
+/*** header options ***/
+
+
+/* header 1 */
+.header1 #preHeader {background-color: #333;}
+.header1 #mainHeader {border-bottom:none;}
+.header1 ul.quickMenu li, .header1 .contactPhone {border-right:1px solid #555;}
+.header1 .navbar-default .navbar-nav > li > a {color:#555;}
+
+
+/** header 2 **/
+.header2 #mainHeader {border-bottom:none;}
+.header2 .navbar-default .navbar-nav > li > a {color:#555;}
+
+
+/*** header 3 ***/
+.header3 #preHeader {border-bottom: 1px solid #eee; background:#fff;}
+
+.header3 #preHeader .socialNetwork a { border-left:1px solid #eee;}
+.header3 #preHeader .socialNetwork li:last-child a { border-right:1px solid #eee;}
+/**** header 4 ****/
+.header4 #mainHeader {border-bottom:none;}
+
+
+/***** header 5 *****/
+
+.header5 #preHeader {background:#538BAF;}
+.header5 ul.quickMenu li a, .header5 .contactPhone, .header5 #preHeader .socialNetwork i{
+		color:#fff;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media(max-width:767px){}
+
+@media(min-width:768px){
+	
+	
+
+	/* Header 1 */
+	.header1 .navbar-default .navbar-nav > li > a.active, .header1 .navbar-default .navbar-nav>li>a:hover, .header1 .navbar-default .navbar-nav>li.hover>a,.header1 #resMainMenu li.active>a {
+		background:#538BAF;
+		color:#fff;
+	}
+
+	/** header 2 **/
+	.header2 .navbar-default .navbar-nav > li > a.active, .header2 .navbar-default .navbar-nav>li>a:hover, .header2 .navbar-default .navbar-nav>li.hover>a,.header2 #resMainMenu li.active>a {
+		background:#538BAF;
+		color:#fff;
+	}
+	.header2 .navbar-nav ul, .header2 .nekoMegaMenu {background:#538BAF;}
+	.header2 #mainMenu .navbar-nav ul li a {
+		border-color:rgba(255,255,255,0.25);
+	}
+	.header2 .navbar-nav ul li a {color:#fff;}
+	.header2 .navbar-nav ul li a:hover {background:#fff; color:#538BAF;}
+
+	/*** header 3 ***/	
+	.header3 .navbar-default .navbar-nav > li > a {border-left:1px solid #eee;}
+
+
+	/**** header 4 ****/
+	.header4 .navbar-default .navbar-nav > li > a {border-bottom: 4px solid #fff;}
+	.header4 .navbar-default .navbar-nav>li>a:hover, .header4 .navbar-default .navbar-nav>li.hover>a,.header4 #resMainMenu li.active>a {
+		border-bottom: 4px solid #f7f7f7; background:#f7f7f7;
+	}
+	.header4 .navbar-default .navbar-nav > li > a.active {
+		border-bottom: 4px solid #538BAF;background:#f7f7f7;
+	}
+	.header4 .navbar-nav ul, .header4 .nekoMegaMenu {background:#eee;}
+	.header4 .nekoMegaMenu h2 {color:#555;}
+	.header4 #mainMenu .navbar-nav ul li a {
+		border:none;
+	}
+
+
+	/***** header 5 *****/
+	.header5 .navbar-nav ul, .header5 .nekoMegaMenu { background:#538BAF;}
+	.header5 .navbar-default .navbar-nav > li > a.active, .header5 .navbar-default .navbar-nav>li>a:hover, .header5 .navbar-default .navbar-nav>li.hover>a,.header5 #resMainMenu li.active>a { background-color:#538BAF; color:#fff; }
+	.header5 .navbar-nav ul li a {color:#fff;}
+	.header5 .navbar-nav ul li a:hover, .header5 .navbar-nav ul li.hover > a {background:#fff;color:#538BAF;}
+	.header5 #mainMenu .navbar-nav ul li a {border-color:rgba(255,255,255,0.25);}
+	
+}
+
+@media(min-width:992px){}
+
+@media(min-width:1200px){}
+
+/*** END MEDIA QUERIES ***/
+
+/* END MAIN MENU 
+================================================== */
+
+
+/* FOOTER 
+================================================== */
+
+footer {
+	color:#777;
+	background:#f7f7f7;
+	border-top:1px solid #ddd;
+}
+footer h1,footer h2,footer h3,footer h4{color:#777; font-weight:300;}
+#footerRights {
+	background-color:#eee;
+	color:#999;
+	border-top:1px dashed #ccc;
+}
+
+/* END FOOTER 
+================================================== */
+
+/* HOME
+================================================== */
+
+#noSliderWrapper{background-color:#538BAF}
+
+
+/* END HOME
+================================================== */
+
+
+/* PAGES
+================================================== */
+.page-header{border-bottom: 1px solid rgba(1,1,1,0.075); background: #6ba1c4;}
+.page-header h1, .page-header p {color:#fff;}
+.page-header.bigHeader h1, .page-header.bigHeader h2, .page-header.bigHeader p {color:#333;}
+
+ul#navTrail li a {color:#eee;}
+ul#navTrail li a:hover {color:#538BAF;}
+ul#navTrail li#navTrailLast {color:#fff;}
+
+/** sidebar **/
+
+nav#subnav ul li a {border-bottom:1px solid #eee ; color:#aaa;} 
+nav#subnav ul li a.active, nav#subnav ul li a:hover{border-bottom-color:#538BAF ; color:#538BAF;} 
+
+/* END PAGES
+================================================== */
+
+
+/* SLIDERS
+================================================== */
+/*** supersized ***/
+#superSizedSlider h1, #fullScreenSliderWrapper h1{color:#fff;text-shadow: 0 0 10px rgba(255, 255, 255, 1);}
+
+/*** OWL Carousel ***/
+.owl-theme .owl-controls .owl-buttons div{background:#538BAF;}
+.owl-theme .owl-controls .owl-buttons div:hover{background:#6ba1c4;}
+.owl-theme .owl-controls .owl-page span {background:#6ba1c4;}
+.carouselHome .owl-theme .owl-controls .owl-page span {
+	background:#fff;
+	color:#6ba1c4;
+}
+
+.owlCaption {
+	color:#333;
+	background:rgba(255, 255, 255, 0.5);
+}
+/**** camera ****/
+.camera_neko_skin .camera_caption > div {
+	background:rgba(255, 255, 255, 0.15);
+	border-top: 1px solid rgba(255, 255, 255, 0.42);
+}
+.camera_caption h1{
+	color:#fff;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+.camera_caption h2 {
+	color:#6ba1c4;
+	background:#fff;
+}
+.camera_caption .camera_wrap a {background: inherit;}
+
+/**** end camera ****/
+
+
+/* END SLIDERS
+================================================== */
+
+/* BLOG
+================================================== */
+
+.post h2 a {color:#555;}
+.post h2 a:hover {color:#538BAF;}
+
+.tagCloud a:link, .tagCloud a:visited {
+	background-color: #fff;
+	color: #ccc;
+	border:1px solid #eee;
+}
+.tagCloud a:hover {
+	background-color: #538BAF ;
+	color: #FFF;
+}
+
+p.credits {
+	color:#555;
+	background:#eee;
+}
+p.credits a {color:#538BAF;}
+}
+.widget {border-bottom: 1px dashed #eee}
+
+.search .btn {border: 1px solid #DDD;}
+.search .btn:hover {border-color:#538BAF;}
+
+ul.entry-meta li a {background:#eee;}
+ul.entry-meta li a:hover {
+	background:#538BAF;
+	color:#fff;
+}
+
+/* END BLOG
+================================================== */
+
+/* PORTFOLIO
+================================================== */
+
+nav#filter a {
+	border:1px solid #ddd;
+	color:#555;
+}
+nav#filter a:hover, nav#filter a.current {
+	background-color: #538BAF ;
+	color:#fff;
+	border-color:#538BAF;
+}
+li.filterTitle {
+	color:#4F6266;
+}
+section#projectDescription {
+	background-color:#F8F8F8
+}
+.mfp-bg {background-color: #ffffff;}
+
+.boxLink {background:#538BAF; color:#fff;text-align:center; position:relative;}
+
+.boxLink h2 {color:#fff;}
+
+.generatedMoreLink {background-color:#538BAF;}
+/*** pinterest like ***/
+.pinBox{
+	background:#fff;
+	border:1px solid #eee;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.pinInfo li a {color:#fff;}
+.iconLinks a:hover i, .pinInfo li a:hover{text-shadow: 0 0 5px #FFF;}
+
+.imgHover figcaption {
+	background: #538BAF;
+	color: #fff;
+}
+.imgHover figcaption h3 {color: #fff;}
+
+.neko-hover-1 figcaption .iconLinks a i{color:white;}
+
+/* END PORTFOLIO
+================================================== */
+
+/* MISCELANIOUS
+================================================== */
+/* Preloader one page */
+#preloader {
+	background-color:#538BAF; /* change if the mask should have another color then white */	
+}
+
+/*** Scroll up Button ***/
+#nekoToTop{
+	color:#538BAF;
+	background:#fff;
+	border:1px solid rgba(0, 0, 0, 0.15);
+}
+#nekoToTop:hover{
+	color:#fff;
+	background:#538BAF;	
+}
+
+/** focus color ***/
+::-moz-selection {
+	background: #538BAF;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #538BAF;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*** hover images ***/
+.mask {background:#538BAF;}
+.hoverInfo a i{color:#fff;}
+.hoverInfo a i.iconRounded {border-color: #fff;}
+.hoverInfo a:hover span {color:#538BAF;}
+.hoverInfo a:hover i.iconRounded {border-color: #538BAF;}
+
+/*** pricing table ***/
+.pricingBloc {
+	background-color:#fff;
+	border:1px solid rgba(0, 0, 0, 0.2);
+
+}
+.pricingBloc ul li {
+	color:#444!important;
+}
+
+.pricingBloc ul li:nth-child(odd){background-color:#f7f7f7;}
+.pricingBloc ul li:nth-child(even){background-color:#fff;}
+
+
+.pricingBloc ul li:last-child {
+	border-bottom:none;
+}
+.pricingBloc h2 {
+	background-color:#fff;
+	color:#888!important;
+	border-bottom:1px dashed #eee ;
+}
+.pricingBloc h3 {
+	background-color:#fff;
+	color:#777;
+
+}
+.pricingBloc p {
+	background-color:#fff;
+	color:#444!important;
+}
+.pricingBloc.focusPlan {
+	margin-top:0;
+	border-color:#D1D1D1;
+}
+.pricingBloc.focusPlan h2{
+	color:#538BAF!important;
+	border-bottom:none;
+}
+.pricingBloc.focusPlan h3 {
+	background-color:#538BAF ;
+	color:#fff!important;
+}
+
+/*** Form ***/
+.form-control:focus{
+	border: 1px dashed #538BAF;
+	background-color:#fff;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+}
+.form-control {
+	color: #444;
+	border: 1px solid #ddd;
+	background-color:#f7f7f7;
+}
+.error {color: #B94A48;
+	background-color: #F2DEDE;
+	border-color: #EED3D7;}
+
+	label.error {color:#fff;
+		background-color: #B94A48;
+		border:none}
+
+
+
+		#projectQuote, #projectQuote h3{background:#ddd;color:#444;}
+
+		/* pop up */
+		.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {color:#538BAF;}
+
+/* END MISCELANIOUS
+================================================== */
+
+/* NEKO CSS FRAMEWORK
+================================================== */
+
+.boxContent {border: 1px dashed rgba(0,0,0,0.15); border-top: none;}
+
+.boxContent h2, .boxContent h3 {color:#538BAF;}
+/*** Feature box **/
+
+.boxFeature i {color:#538BAF ;} 
+
+/*** Focus box **/
+
+.boxFocus {border:1px dashed #ddd;}
+
+/*** Icon box **/
+
+.boxIcon a p {color:#777;}
+.boxIcon a:hover h2, .boxIcon a:hover p {color:#538BAF;}
+
+/*** testimonial ***/
+
+.boxTestimonial{background:#f7f7f7;}
+
+.boxTestimonial img {border: 1px solid rgba(0, 0, 0, 0.15);}
+
+/* miscelanious */
+.whiteText {color:white;}
+.footerWidget .boxTestimonial blockquote {
+	background:#333;
+	color:#eee;
+}
+
+/*** call to action ***/
+.ctaBox {border:2px solid rgba(0,0,0,0.05);}
+.ctaBoxFullwidth{border:none}
+
+.ctaBox blockquote {
+	color:#fff;
+}
+/*color0*/
+.color0{
+	background-color:#fff;
+}
+
+/*color1*/
+.color1, .ctaBox.color1{
+	background-color:#F7F7F7;
+	color:#444;
+}
+
+.color1 h1, .color1 h2, .color1 h3, .color1 h4, .color1 blockquote, .color1 a{
+	color:#444;
+}
+.color1 a.btn{color:#111;}
+.color1 a.btn:hover{color:#fff;}
+.color1 .subTitle  {color:#999;}
+/*color2*/
+.color2, .slice.color2, .bulle.color2, .ctaBox.color2{
+	background-color:#538BAF ;
+	color:#fff;
+}
+
+.color2 h1, .color2 h2, .color2 h3, .color2 h4, .color2 blockquote, .color2 a {
+	color:#fff;
+}
+.color2 a.btn{color:#111;}
+.color2 a.btn:hover{color:#fff;}
+.color2 a.btn-border{color:#fff;}
+
+.color2 h1 strong {background:#fff; color:#538BAF;}
+
+.color2 .ctaBox {border-color:rgba(255,255,255,0.5);}
+.color2 h1:before,.color2 h1:after{color:#6ba1c4;}
+/*** icons ***/
+.iconRounded {color:#538BAF; border: 1px dashed #538BAF;}
+.iconRounded:hover, .color1 .iconRounded:hover, .boxIcon a:hover i{background-color:#6ba1c4;color:#fff;text-shadow: 0 0 5px #FFF; border-style: solid;}
+
+.color2 .iconRounded {background-color:#FFF;color:#538BAF ;}
+
+/* END NEKO CSS FRAMEWORK
+================================================== */
+
+
