@@ -22,8 +22,8 @@ This is purely for fixing those football cravings without the headache of clicki
 
 <br/>
 **DEMO**
-![Demo](/Documentation/livestreams.gif)
-![Demo](/Documentation/highlights_stream.gif)
+![Demo](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/livestreams.gif)
+![Demo](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/highlights_stream.gif)
 
 
 
