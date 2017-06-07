@@ -22,9 +22,10 @@ This is purely for fixing those football cravings without the headache of clicki
 
 <br/>
 **DEMO**
-![Demo](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/livestreams.gif)
-![Demo](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/highlights_stream.gif)
 
+![](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/livestreams.gif)
+
+![](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/highlights_stream.gif)
 
 
 <br/><br/><br/>
