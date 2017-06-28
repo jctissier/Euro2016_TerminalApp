@@ -1,9 +1,6 @@
 # [FootyLinks](http://footylinks.herokuapp.com/live)
 
-[![Join the chat at https://gitter.im/FootyLinks/Lobby](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/FootyLinks/Lobby)
 **Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
-
-This web app was inspired by my previous project, [Download old source code](https://github.com/jctissier/Football-CLI)
 
 ### :soccer: FootyLinks :soccer: ###
 [Documentation and code examples for this project](http://bit.ly/2jdn8sF)
@@ -27,3 +24,4 @@ This is purely for fixing those football cravings without the headache of clicki
 ![](https://github.com/jctissier/Euro2016_TerminalApp/blob/master/Documentation/highlights_stream.gif)
 
   
+[![Join the chat at https://gitter.im/FootyLinks/Lobby](https://badges.gitter.im/stvhwrd/Euro-2016-CLI.svg)](https://gitter.im/FootyLinks/Lobby)
