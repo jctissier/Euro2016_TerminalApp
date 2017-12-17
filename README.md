@@ -1,4 +1,4 @@
-# [FootyLinks](http://footylinks.herokuapp.com/live)
+# [FootyLinks](http://footylinks.live)
 
 **Featured on [Product Hunt](https://www.producthunt.com/tech/euro-2016-on-mac-terminal)**:thumbsup:
 
